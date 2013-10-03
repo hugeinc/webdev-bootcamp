@@ -20,8 +20,15 @@
 ----------------------------------------------------------------------------- */
 
 body {
+	background: url('../images/header-bg.jpg') no-repeat center 175px;
 	border-top: 5px #bc0505 solid;
 	color: #666666;
+}
+
+.page {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 nav,
@@ -29,10 +36,18 @@ header,
 h1,
 section,
 .wrapper {
-	width: 1000px;
 	margin: 0 auto;
+	width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
 }
-
+.wrapper {
+	height:  100%;
+}
+h1 {
+	margin: 20px auto 0 auto;
+}
 ul {
 	padding: 0;
 	margin: 0;
@@ -46,20 +61,20 @@ a:visited {
 	color: #1a1a1a;
 }
 
-
-
-
 /* Navigation
 ----------------------------------------------------------------------------- */
 
-nav {
+.main-nav {
 	font-family: bevan, sans-serif;
-	height: 40px;
-	margin: 20px auto 70px;
+/*	height: 40px;
+*/	margin: 50px auto 0;
+	width: 73%;
 }
-
+nav ul {
+	overflow: hidden;
+}
 nav li {
-	width: 20%;
+	width: 25%;
 	float: left;
 }
 
@@ -72,7 +87,9 @@ nav a {
 	font-size: 18px;
 	text-transform: uppercase;
 }
-
+#mobile-hamburger {
+	display: none;
+}
 
 
 
@@ -84,9 +101,10 @@ nav a {
 ----------------------------------------------------------------------------- */
 
 header {
-	background: url('../images/header-bg.jpg') no-repeat top left;
-	width: 1400px;
-	height: 777px;
+	/*background: url('../images/header-bg.jpg') no-repeat top left;
+	max-width: 1400px;
+	width: 100%;*/
+	height: 815px;
 }
 
 h1 {
@@ -101,17 +119,16 @@ h1 span {
 
 
 
-
-
-
-
 /* Section - Content
 ----------------------------------------------------------------------------- */
 
 #content {
-	width: 1000px;
-	background: #f9f9f9;
-	padding: 0 200px 100px;
+	/*width: 1000px;*/
+	/*background: #f9f9f9;*/
+	/*padding: 0 200px 50px;*/
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
 }
 
 #content h2 {
@@ -138,7 +155,9 @@ h1 span {
 
 .user-text {
 	float: left;
-	width: 670px;
+	width: 67%;
+	padding-left: 50px;
+	line-height: 20px;
 	
 	-moz-column-count: 2; /* Firefox */
 	-webkit-column-count: 2; /* Safari and Chrome */
@@ -171,40 +190,40 @@ h1 span {
 	padding: 20px 0 0;
 }
 
-#menu-food h3 {
-	margin: 0 auto 80px;
+.menu-category h3 {
+	margin: 0 auto 40px;
 }
 
-.menu {
+.menu-category {
 	text-align: center;
 }
 
-.menu h4 {
+.menu-category h4 {
 	font-family: sniglet, sans-serif;
-	font-size: 38px;
+	font-size: 30px;
 	color: #bc0505;
 	margin: 0 0 20px;
 	text-transform: uppercase;
 }
 
-.menu .column {
+.menu-category .menu-section {
 	width: 216px;
 	margin: 0 60px;
 	float: left;
 }
 
-.menu ul {
+.menu-category ul {
 	margin: 0 0 50px;
 }
 
-.menu li {
+.menu-category li {
 	font-family: bevan, sans-serif;
 	font-size: 18px;
 	text-align: center;
 	margin: 0 0 15px;
 	color: #000;
 }
-.menu li span {
+.menu-category li span {
 	display: block;
 	font-size: 14px;
 	font-family: Arial, sans-serif;
@@ -230,7 +249,6 @@ h1 span {
 	background: url('sprites/header-bbq.gif') no-repeat top left;
 	height: 84px;
 	width: 190px;
-	margin: 0 auto;
 }
 
 .menu-bbq h3 span {
@@ -261,7 +279,6 @@ h1 span {
 	background: url('sprites/header-sides.gif') no-repeat top left;
 	height: 84px;
 	width: 203px;
-	margin: 0 auto;
 }
 
 .menu-sides h3 span {
@@ -313,7 +330,7 @@ h1 span {
 ----------------------------------------------------------------------------- */
 
 .menu-drinks {
-	float: left;
+	margin: 0 auto;
 	width: 670px;
 }
 
@@ -321,33 +338,21 @@ h1 span {
 	background: url('sprites/header-drinks.gif') no-repeat top left;
 	height: 51px;
 	width: 181px;
-	margin: 0 auto 40px;
 }
 
 .menu-drinks h3 span {
 	display: none;
 }
 
-.menu-drinks .column {
+.menu-drinks .menu-section {
 	width: 335px;
 	margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Section - Google Maps
 ----------------------------------------------------------------------------- */
 
 #google-maps {
-	margin-top: 100px;
 	height: 450px;
 	position: relative;
 	width: 100%;
@@ -369,7 +374,6 @@ h1 span {
 	background: #fff;
 	padding: 30px;
 	width: 340px;
-	height: 270px;
 	
 	float: right;
 	margin-right: 85px;
@@ -381,14 +385,11 @@ h1 span {
 }
 
 #address h3 {
-	background: url('sprites/header-address.gif') no-repeat top left;
-	height: 70px;
-	width: 342px;
+	color: #bc0505;
+	font-family: sniglet, sans-serif;
+	font-size: 38px;
 	margin: 0 auto 20px;
-}
-
-#address h3 span {
-	display: none;
+	text-align: center;
 }
 
 #address hr {
@@ -402,6 +403,10 @@ h1 span {
 	line-height: 20px;
 	text-align: center;
 	margin: 0 0 20px;
+}
+
+#address p {
+	text-align: center;
 }
 
 #address p strong {
@@ -420,6 +425,7 @@ h1 span {
 	
 	font-family: bevan, sans-serif;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
 	line-height: 41px;
@@ -489,7 +495,7 @@ h1 span {
 footer {
 	color: #d56161;
 	background: #bc0505;
-	padding: 15px 0;
+	padding: 15px;
 	font-size: 14px;
 }
 
@@ -511,13 +517,192 @@ footer li {
 	width: auto;
 }
 
-footer a {
+footer a ,
+footer a:visited {
 	font-size: 14px;
 	color: #d56161;
 }
 
 
 
+@media all and (min-width: 0) and (max-width: 660px) {
+	/* General Styles
+	---------------------------------------------------------------------------- */
+	body {
+		border: 0;
+		background-size: 550px;
+		/*overflow: hidden;*/
+		width: 100%;
+		-webkit-text-size-adjust: none;
+	}
+	nav ul {
+		display: none;
+	}
+	nav.expanded ul {
+		display: block;
+	}
+	nav li a {
+		float: none;
+		font-size: 15px;
+	}
+	header {
+		height: 480px;
+	}
+	h1 {
+		background-size: 80%;
+		background-position: center 40px;
+		margin: 0;
+		height: 295px;
+		width: 100%;
+	}
+	/* Navigation
+	---------------------------------------------------------------------------- */
+	.main-nav {
+		background-color: #f3f3f3;
+		border-bottom: 5px #bc0505 solid;
+		margin: 0;
+		padding: 0 20px;
+		position: absolute;
+		width: 100%;
+	}
+	.main-nav ul {
+		padding: 15px 0;
+	}
+	.main-nav li {
+		float: none;
+		margin-top: 20px;
+		text-align: left;
+		width: auto;
+	}
+	.main-nav li:first-child {
+		margin-top: 0;
+	}
+	/* mobile menu  hamburger*/
+	#mobile-hamburger {
+		background-color: #bc0505;
+		display: block;
+		height: 20px;
+		padding: 10px;
+		position: absolute;
+		right: 20px;
+		width: 20px;
+	}
+	#mobile-hamburger span {
+		display: block;
+		position: relative;
+		width: auto;
+		top: 5px;
+	}
+	#mobile-hamburger .icon-bg {
+		background-color: #fff;
+		height: 15px;
+	}
+	#mobile-hamburger .icon-bg .icon-bar {
+		background-color: transparent;
+		border-top: 5px solid #bc0505;
+		height: 5px;
+		position: relative;
+		top: 5px;
+	}
+	/* Content
+	---------------------------------------------------------------------------- */
+	#content {
+		padding: 0 20px;
+	}
+	#content h2 {
+		background: none;
+		font-size: 23px;
+		padding: 10px 0 25px 0;
+		text-align: left;
+		top: 0;
+	}
+	
+	.user-text {
+		float: none;
+		padding: 0;
+		width: auto;
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		   		column-count: 1;
+	}
+	.user-text p {
+		padding-top: 15px;
+	}
+	.user-text p:first-child {
+		padding-top: 0;
+	}
+	.user-text + img {
+		display: none;
+	}
+	/* Menu
+	---------------------------------------------------------------------------- */
+	.menu-category .menu-section {
+		float: none;
+		margin: 0;
+		text-align: left;
+		width: auto;
+	}
+	.menu-category > div {
+		border: 0;
+		float: none;
+		padding: 0 20px;
+		width: auto;
+	}
+	.menu-category {
+		width: 100%;
+		text-align: left;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		   		box-sizing: border-box;
+	}
+	.menu-category h3 {
+		margin: 0 auto 20px;
+	}
+	.menu-category .menu-section ul {
+		height: auto;
+	}
+	.menu-category li {
+		text-align: left;
+	}
+	#map_canvas {
+		display: none;
+	}
+	#google-maps {
+		border-top: 1px solid #efefef;
+		box-shadow: -1px 0 3px #d5d5d5;
+		height: auto;
+	}
+	#address {
+		float: none;
+		margin: 0 auto;
+		width: auto;
+		top: 0;
+	}
+	#address a {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	footer {
+		line-height: 20px;
+	}
+	footer p {
+		padding-bottom: 20px;
+	}
+	footer p, 
+	footer ul {
+		float: none;
+	}
+	footer li {
+		text-align: left;
+	}
+	footer li:first-child {
+		margin-left: 0;
+	}
+	footer li a {
+		font-size: 11px;
+	}
+}
 
 
 
