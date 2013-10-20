@@ -134,3 +134,45 @@ var latlng = geocoder.geocode({
 
     </pre>
 </div>
+
+<div class="slide">
+    <h4>Putting it all together.</h4>
+    <pre>
+var HOLDENS = HOLDENS || {};
+HOLDENS.Global = {
+    init: function() {
+        HOLDENS.Global.setUpMobileMenu();    
+    },
+    setUpMobileMenu: function() {
+        
+    //... setUpMobileMenu function goes here!
+    }
+    
+};
+    </pre>
+</div>
+
+<div class="slide">
+<pre>
+HOLDENS.Map = {
+    init: function() {
+        HOLDENS.Map.drawMap();    
+    },
+    //default options required by the Google Maps APi
+    drawMap: function() {
+    // .. draw map function goes here!
+    }
+    
+    
+};
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+window.onload = function() {
+    HOLDENS.Global.init();
+    HOLDENS.Map.init();
+}
+</pre>
+</div>
