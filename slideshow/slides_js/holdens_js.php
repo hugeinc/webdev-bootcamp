@@ -1,6 +1,17 @@
 <div class="slide invert black section">
     <h1 class="white">Examples.</h1>
 </div>
+
+<div class="slide">
+    <h4>Including a javascript file.</h4>
+    <p>To get started with our website javascript, let's add the following just above the body tag:</p>
+    <pre>
+<script type="text/javascript" src="js/global.js"></script>
+
+    </pre>
+    <p>Now create a file in your holdens_web directory in a new folder called "js" called global.js</p>
+</div>
+
 <div class="slide">
     <h4>Menu.</h4>
     <p>Holden's has a menu that looks great on a normal computer screen, but takes up a lot of real estate on smaller devices.</p>
@@ -58,7 +69,7 @@ mobiMenuBtn.onclick = function( e ){
 
 </div>
 <div class="slide">
-    <p>To begin, copy paste the javascript at this link into the bottom of your page:</p>
+    <p>To begin, copy paste the javascript tag at this link right above the global.js include line in your index.html file:</p>
     <p><a href="http://pastebin.com/vTAg4c10">http://pastebin.com/vTAg4c10</a></p>
     
 </div>
@@ -97,6 +108,7 @@ drawMap: function() {
     </ul>
     
     <p>All 3 of these actions come directly from google's API.</p>
+    <p>The following code will go after the <strong>var map = new google.map...</strong> line, but before the closing curly brace.</p>
 </div>
 
 <div class="slide">
