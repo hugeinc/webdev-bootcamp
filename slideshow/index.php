@@ -68,11 +68,6 @@
         
         <?php include('slides_html/semantics_why.php') ?>
         
-        <?php include('slides_html/forms.php') ?>
-        
-        <?php include('slides_html/forms_types.php') ?>
-        
-        
 
         
         
