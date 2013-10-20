@@ -12,26 +12,19 @@
 	src: url('fonts/sniglet.eof');
 	src: local('sniglet'), url('fonts/sniglet.ttf') format('truetype');
 }
-
-
-
-
 /* Global Styles
 ----------------------------------------------------------------------------- */
-
 body {
 	background: url('../images/header-bg.jpg') no-repeat center 175px;
 	border-top: 5px #bc0505 solid;
 	color: #666666;
 	font-size: 16px;
 }
-
 .page {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
 }
-
 nav,
 header,
 h1,
@@ -56,23 +49,15 @@ ul {
 li {
 	list-style: none;
 }
-
 a,
 a:visited {
 	color: #1a1a1a;
 }
-
-
-
-
 /* Navigation
 ----------------------------------------------------------------------------- */
-
 .main-nav {
 	font-family: bevan, sans-serif;
-/*	height: 40px;
-*/	margin: 50px auto 0;
-	/*width: 73%;*/
+	margin: 50px auto 0;
 }
 nav ul {
 	overflow: hidden;
@@ -92,16 +77,9 @@ nav a {
 #mobile-hamburger {
 	display: none;
 }
-
-
-
 /* Header
 ----------------------------------------------------------------------------- */
-
 header {
-	/*background: url('../images/header-bg.jpg') no-repeat top left;
-	max-width: 1400px;
-	width: 100%;*/
 	height: 815px;
 }
 
@@ -114,30 +92,21 @@ h1 {
 h1 span {
 	display: none;
 }
-
-
 /* Section - Content
 ----------------------------------------------------------------------------- */
-
 #content {
-	/*width: 1000px;*/
-	/*background: #f9f9f9;*/
-	/*padding: 0 200px 50px;*/
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	   		box-sizing: border-box;
 }
-
 #content h2 {
 	position: relative;
 	top: -46px;
 	overflow: hidden;
-/*	background: url('sprites/logo.png') no-repeat top left;*/
 	font-family: bevan, sans-serif;
 	font-size: 1.625em; /* 26/16 */
 	color: #333;
-/*	padding-top: 165px;
-*/}
+}
 #content h2 img {
 	float: left;
 	width: 21.1%; /* 211/1000px */
@@ -153,12 +122,10 @@ h1 span {
 	font-size: 0.69em; /* 18/26 */
 	color: #d2d2d2;
 }
-
 #content .cowboy-icon {
 	margin-left: 30px;
 	float: right;
 }
-
 .user-text {
 	float: left;
 	width: 67%;
@@ -174,26 +141,20 @@ h1 span {
 	-webkit-column-gap: 30px; /* Safari and Chrome */
 	column-gap: 30px;
 }
-
-
 /* Section - Menu
 ----------------------------------------------------------------------------- */
-
 #menu-food {
 	margin: 50px auto 30px;
 	color: #000;
 	border-bottom: 2px #eaeaea solid;
 	padding: 20px 0 0;
 }
-
-.menu-category h3 {
-	margin: 0 auto 40px;
-}
-
 .menu-category {
 	text-align: center;
 }
-
+.menu-category h3 {
+	margin: 0 auto 40px;
+}
 .menu-category h4 {
 	font-family: sniglet, sans-serif;
 	font-size: 1.875em; /* 30/16 */
@@ -201,23 +162,14 @@ h1 span {
 	margin: 0 0 20px;
 	text-transform: uppercase;
 }
-
 .menu-category .menu-section {
 	width: 32%; /*216px/672; */
 	margin: 0 10%;
 	float: left;
 }
-.menu-sides .menu-section {
-	width: 100%;
-	margin: 0;
-}
-.menu-bbq .menu-section {
-	margin: 0 9%;
-}
 .menu-category ul {
 	margin: 0 0 50px;
 }
-
 .menu-category li {
 	font-family: bevan, sans-serif;
 	font-size: 1.125em; /* 18/16 */
@@ -230,136 +182,70 @@ h1 span {
 	font-size: 0.875em; /* 14/16 */
 	font-family: Arial, sans-serif;
 }
-
-
-
-
-
-
-
-
+.menu-sides .menu-section {
+	width: 100%;
+	margin: 0;
+}
+.menu-bbq .menu-section {
+	margin: 0 9%;
+}
 /* Section - Menu - BBQ
 ----------------------------------------------------------------------------- */
-
 .menu-bbq {
-	width: 67%; /* 672px; */
+	width: 67%; /* 672px/1000 */
 	border-right: 2px #eaeaea solid;
 	float: left;
 }
-
 .menu-bbq h3 {
 	background: url('sprites/header-bbq.gif') no-repeat top left;
 	height: 84px;
 	width: 190px;
 }
-
 .menu-bbq h3 span {
 	display: none;
 }
-
 .menu-bbq ul:nth-child(2) {
 	height: 250px;
 }
-
-
-
-
-
-
-
-
-
 /* Section - Menu - Sides
 ----------------------------------------------------------------------------- */
-
 .menu-sides {
 	float: left;
-	width: 32.6%; /* 326px */
+	width: 32.6%; /* 326px/1000 */
 }
-
 .menu-sides h3 {
 	background: url('sprites/header-sides.gif') no-repeat top left;
 	height: 84px;
 	width: 203px;
 }
-
 .menu-sides h3 span {
 	display: none;
 }
-
-
-
-
-
-
-/* Section - Menu - Drinks
+/* Section - Menu - Drink
 ----------------------------------------------------------------------------- */
-
-.specials {
-	background: #bc0505;
-	width: 300px;
-	padding: 35px 15px 15px;
-	height: 280px;
-	text-align: center;
-	float: left;
-}
-
-.specials h4 {
-	font-family: sniglet, sans-serif;
-	font-size: 2.375em; /* 38/16 */
-	color: #fff;
-}
-
-.specials li {
-	color: #fff;
-	font-family: bevan, sans-serif;
-	font-size: 1.375em; /* 22/16 */
-	margin: 0 0 10px;
-}
-
-.specials li.date {
-	font-family: arial, sans-serif;
-	font-size: 0.75em; /* 12/16 */
-}
-
-
-
-
-
-
-
-/* Section - Menu - Sides
------------------------------------------------------------------------------ */
-
 .menu-drinks {
 	margin: 0 auto;
 	width: 670px;
 }
-
 .menu-drinks h3 {
 	background: url('sprites/header-drinks.gif') no-repeat top left;
 	height: 51px;
 	width: 181px;
 }
-
 .menu-drinks h3 span {
 	display: none;
 }
-
 .menu-drinks .menu-section {
 	width: 335px;
 	margin: 0;
 }
-
 /* Section - Google Maps
 ----------------------------------------------------------------------------- */
-
 #google-maps {
 	height: 450px;
 	position: relative;
 	width: 100%;
 }
-
 #map_canvas {
 	position: absolute;
 	top: 0;
@@ -367,7 +253,6 @@ h1 span {
 	width: 100%;
 	height: 450px;
 }
-
 #address {
 	position: relative;
 	top: 60px;
@@ -385,7 +270,6 @@ h1 span {
 	
 	font-size: 0.875em; /* 14/16 */
 }
-
 #address h3 {
 	color: #bc0505;
 	font-family: sniglet, sans-serif;
@@ -393,29 +277,24 @@ h1 span {
 	margin: 0 auto 20px;
 	text-align: center;
 }
-
 #address hr {
 	margin: 10px auto;
 	width: 100px;
 	border: none;
 	border-top: 1px #eaeaea solid;
 }
-
 #address div {
 	line-height: 1.25em; /* 20/16 */
 	text-align: center;
 	margin: 0 0 20px;
 }
-
 #address p {
 	text-align: center;
 }
-
 #address p strong {
 	display: inline-block;
 	width: 155px;
 }
-
 #address a {
 	display: block;
 	float: left;
@@ -432,99 +311,38 @@ h1 span {
 	text-align: center;
 	line-height: 41px;
 }
-
 #address a:last-child {
 	margin-right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* Section - Instagram
------------------------------------------------------------------------------ */
-
-#instagram {
-	background: #272727;
-	width: 100%;
-	padding: 100px 0 50px;
-}
-
-#instagram h2 {
-	font-family: sniglet, sans-serif;
-	font-size: 2.5em; /* 40/16 */
-	color: #fff;
-	display: block;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0 0 50px;
-}
-
-
-#instagram h2 {
-	
-}
-
-#instagram figure {
-	padding: 15px;
-	background: #fff;
-	float: left;
-	margin: 0 29px 30px 0;
-}
-#instagram figure:nth-child(4),
-#instagram figure:nth-child(7) {
-	margin-right: 0;
-}
- 
-
-
-
-
-
-
-
-
 /* Section - Footer
 ----------------------------------------------------------------------------- */
-
 footer {
 	color: #d56161;
 	background: #bc0505;
 	padding: 15px;
 	font-size: 0.875em; /* 14/16 */
 }
-
 footer p {
 	float: left;
 }
-
 footer nav {
 	font-family: arial, sans-serif;
 }
-
 footer ul {
 	float: right;
 }
-
 footer li {
 	float: left;
 	margin-left: 15px;
 	width: auto;
 }
-
 footer a ,
 footer a:visited {
 	font-size: 0.875em; /* 14/16 */
 	color: #d56161;
 }
-
+/* Media Queries – Responsive
+---------------------------------------------------------------------------- */
 @media all and (min-width: 0) and (max-width: 999px) {
 	body {
 		width: 100%;
@@ -556,24 +374,11 @@ footer a:visited {
 
 	}
 }
-
-
-
 @media all and (min-width: 0) and (max-width: 660px) {
 	body {
 		border: 0;
 		background-size: 550px;
 		background-position: center top;
-	}
-	nav,
-	header,
-	h1,
-	section,
-	.wrapper {
-		/*width: 100%;
-		-webkit-box-sizing: border-box;
-		   -moz-box-sizing: border-box;
-				box-sizing: border-box;*/
 	}
 	.main-nav {
 		background-color: #f3f3f3;

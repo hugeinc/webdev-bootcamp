@@ -6,7 +6,6 @@
 	<h4>Before we start.</h4>
 	<p>How we built the nav is fine, but it doesn't look super great in between the static size, and the first breakpoint.</p>
 	<p>Let's add a few rules to our header area to look better in the in-between sizes.</p>
-	<p>Add another css file called <strong>responsive.css</strong> and link it in the header.  We can put all our responsive-specific stuff here.</p>
 </div>
 
 <div class="slide">
