@@ -16,7 +16,7 @@
 </pre>
   <ul class="build">
     <li>Create a new file save it as <strong>global.css</strong>, place it inside the css folder</li>
-    <li>Copy your css rule from your internal css into global.css</li>
+    <li>All your css will live in this new file.</li>
   </ul>
 <?php include('demo_inline.php') ?>
 </div>

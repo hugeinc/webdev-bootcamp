@@ -6,23 +6,6 @@
     <img src="images/html-console.png" width="900" />
 </div>
 
-<div class="slide">
-    <h4>Including CSS - <small>Internal</small></h4>
-    <pre class="structure">
-&lt;head>
-     ...
-     &lt;style type="text/css">
-          /* This is a comment
-          for an h1 style */
-          h1 {
-              color: red;
-          }
-     &lt;/style>
-&lt;/head>
- </pre>
-<?php include('demo_inline.php') ?>
-</div>
-
 <div class="slide black invert">
     <h1 class="white">CSS Selectors</h1>
 </div>
@@ -105,30 +88,6 @@ p[title] {
     <p>This text will be black</p>
     <p title="brisket">This text will be blue</p>
 </div>
-<div class="slide">
-    <h4>Attribute equals- <tag><strong>[attribute="value"]</strong></h4>
-    <p>Selects an html tag that has an attribute with the specified value</p>
-    <pre>
-p[title="waffles"] {
-    color: blue
-}
-    <p>This text will be black</p>
-    <p title="brisket">This text will be black</p>
-    <p title="waffles">This text will be blue</p>
-</div>
-
-<div class="slide">
-    <h4>Attribute value list contains- <tag><strong>[attribute~="value"]</strong></h4>
-    <p>Selects an html tag that has an attribute whose value is the specified value or is a space delimited list containing that value </p>
-    <pre>
-p[title~="chicken"] {
-    color: blue
-}
-    <p>This text will be black</p>
-    <p title="waffles">This text will be black</p>
-    <p title="waffles chicken">This text will be blue</p>
-</div>
-
 
 <div class="slide">
     <h4>Descendant - <strong>Ancestor1 [Ancestor2...] Target</strong>.</h4>

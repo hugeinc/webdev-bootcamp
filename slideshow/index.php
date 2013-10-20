@@ -81,8 +81,6 @@
         </div>
 
         <?php include('slides_css/what_is_css.php') ?>
-
-        <?php include('slides_css/selectors_and_properties.php') ?>
         
         <?php include('slides_css/selectors.php') ?>
 
