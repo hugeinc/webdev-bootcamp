@@ -1,7 +1,7 @@
 
 
 <div class="slide black">
-	<h1 class="white">CSS Properties</h1>
+    <h1 class="white">CSS Properties</h1>
 </div>
 
 <div class="slide">
@@ -22,10 +22,10 @@
 </div>
 
 <div class="slide">
-	<h4>CSS properties</h4>
-	<ul class="build no-bullet">
-		<li>Use CSS to modify properties of HTML elements</li>
-		<li>
+    <h4>CSS properties</h4>
+    <ul class="build no-bullet">
+        <li>Use CSS to modify properties of HTML elements</li>
+        <li>
 <pre class="structure">
 nav {
   <strong>text-decoration</strong>: underline;
@@ -36,8 +36,8 @@ nav {
   <strong>margin-left</strong>: auto;
 }
 </pre>
-		</li>
-	</ul>
+        </li>
+    </ul>
 </div>
 
 
