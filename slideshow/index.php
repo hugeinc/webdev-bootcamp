@@ -178,6 +178,8 @@
         <?php include('slides_js/events.php') ?>
         
         <?php include('slides_js/events_common.php') ?>
+        
+        <?php include('slides_js/holdens_js.php') ?>
 
 
 
