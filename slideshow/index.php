@@ -28,12 +28,9 @@
             <h1 class="thin-pink-bottom-border">
             Huge School
             </h1>
-            <p class="smaller">4-day, intensive, Web Development course.</p>
-            <p class="smaller">March 9 - 12, 2013</p>
+            <p class="smaller">Intro to Web Development</p>
         </div>
-        
-        <?php include('slides_other/environment.php') ?>
-        
+                
         <div class="slide magenta invert white-border">
             <h1 class="v-center bigger white">Get started.</h1>
         </div>
