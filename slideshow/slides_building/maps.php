@@ -1,6 +1,10 @@
 
+
+<div class="slide black invert section">
+	<h1 class="v-center white">Google Maps</h1>
+</div>
 <div class="slide section">
-	<h4>Google Maps.</h4>
+	<h4>The markup</h4>
 	<p>We are going to be integrating a full-width google map (with javascript!).  For now, let's just work on the style.</p>
 <pre>
 <section id="google-maps" class="clearfix">
