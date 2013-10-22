@@ -1,213 +1,201 @@
-/* Header
------------------------------------------------------------------------------ */
-
-nav {
-	width: 80%;
-}
-
-nav li {
-	text-align: center;
-}
-
-nav li a {
-	float: none;
-}
-
-header {
-	background-position: center center;
-	background-size: cover;
-	width: 100%;
-}
-
-
-/* Large devices breakpoint
------------------------------------------------------------------------------ */
-
-@media screen and (max-width: 874px) {
-	/* Update global areas for smaller screens */
+/* Media Queries – Responsive
+---------------------------------------------------------------------------- */
+@media all and (min-width: 0) and (max-width: 999px) {
+	body {
+		width: 100%;
+	}
+	#content {
+		padding: 0 20px;
+	}
 	h1 {
-		background: none;
+		background-size: 90%;
+		background-position: center center;
 	}
-	
-	header {
-		background: none;
-		height: 0px;
+	.main-nav {
+		width: 95%;
 	}
-			
-	#content,
-	#menu-food,
-	#menu-drinks,
-	#google-maps {
-		width: 90%;
-		padding: 0px 5% 5%;
-	}
-	
-	#instagram {
-		width: 100%;
-		padding: 0px 0px 0px 0px;
-	} 
-	
-	.wrapper {
-		width: 90%;
-	}
-	
-	/* Update nav and header for smaller screens */
-	nav {
-		margin: 20px auto 20px;
-	}
-	
-	nav li a {
-		font-size: 12px;
-	}
-
-	#content h2 {
-		top: 10px;
-		padding-top: 225px;
-		margin-bottom: 20px;
-	}
-	
-	#content img {
-		display: none;
-		float: none;
-	}
-	
 	.user-text {
+		width: 50%;
+		padding: 0;
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		   		column-count: 1;
+	}
+	.user-text p {
+		padding-top: 15px;
+	}
+	.user-text p:first-child {
+		padding-top: 0;
+	}
+	.cowboy-icon {
+
+	}
+}
+@media all and (min-width: 0) and (max-width: 660px) {
+	body {
+		border: 0;
+		background-size: 550px;
+		background-position: center top;
+	}
+	.main-nav {
+		background-color: #f3f3f3;
+		border-bottom: 5px #bc0505 solid;
+		margin: 0;
+		padding: 0 20px;
+		position: absolute;
 		width: 100%;
 	}
-	
-	/* Reflow the menus */
-	
-	.menu-bbq {
-		width: 60%;
+	.main-nav ul {
+		padding: 15px 0;
 	}
-	
-	.menu .column {
-		width: 40%;
-		margin: 4%;
+	.main-nav li {
+		float: none;
+		margin-top: 20px;
+		text-align: left;
+		width: auto;
 	}
-	
-	.menu-sides {
-		width: 35%;
-		margin-left: 4%;
+	.main-nav li:first-child {
+		margin-top: 0;
 	}
-	
-	.specials {
-		width: 30%;
-		margin-right: 4%;
+	/* Navigation
+	---------------------------------------------------------------------------- */
+	/* mobile menu  hamburger*/
+	#mobile-hamburger {
+		background-color: #bc0505;
+		display: block;
+		height: 20px;
+		padding: 10px;
+		position: absolute;
+		right: 20px;
+		width: 20px;
 	}
-	
+	#mobile-hamburger span {
+		display: block;
+		position: relative;
+		width: auto;
+		top: 5px;
+	}
+	#mobile-hamburger .icon-bg {
+		background-color: #fff;
+		height: 15px;
+	}
+	#mobile-hamburger .icon-bg .icon-bar {
+		background-color: transparent;
+		border-top: 5px solid #bc0505;
+		height: 5px;
+		position: relative;
+		top: 5px;
+	}
+	nav ul {
+		display: none;
+	}
+	nav.expanded ul {
+		display: block;
+	}
+	nav li a {
+		float: none;
+		font-size: 0.9375em; /* 15/16 */
+	}
+	header {
+		height: 306px;
+	}
+	h1 {
+		background-size: 80%;
+		background-position: center 20px;
+		height: 295px;
+		margin: 0;
+		width: 100%;
+	}
+	#content {
+		padding: 0 20px;
+	}
+	#content h2 {
+		background: none;
+		font-size: 1.4375em; /* 23/16 */
+		padding: 10px 0 25px 0;
+		text-align: left;
+		top: 0;
+	}
+	#content h2 img {
+		display: none;
+	}
+	#content h2 strong {
+		margin-top: 0;
+		width: 100%;
+	}
+	.user-text {
+		float: none;
+		padding: 0;
+		width: auto;
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		   		column-count: 1;
+	}
+	.user-text + img {
+		display: none;
+	}
+	.menu-category .menu-section {
+		float: none;
+		text-align: left;
+		margin: 0;
+	}
+	.menu-category > div {
+		float: none;
+		width: auto;
+		padding: 0 20px;
+	}
+	.menu-category {
+		width: 100%;
+		text-align: left;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		   		box-sizing: border-box;
+	}
+	.menu-category h3 {
+		margin:0 0 20px
+	}
+	.menu-category .menu-section ul {
+		height: auto;
+	}
+	.menu-category li {
+		text-align: left;
+	}
 	#map_canvas {
 		display: none;
-		width: 0px;
-		height; 0px;
 	}
-	
-	.menu-drinks {
-		width: 60%;
-	}
-	
 	#google-maps {
-		margin-top: 0px;
-	}
-	
-	#instagram figure {
-		margin: 0px 10px 10px;
-	}
-	
-	#instagram figure:nth-child(4),
-	#instagram figure:nth-child(7) {
-		margin-right: 10px;
-	}
-	
-	footer ul {
-		float: left;
-	}
-	
-	footer ul li {
-		margin-left: 0px;
-		margin-right: 15px;
-	}
-	/* Change some font sizes */
-	
-	#menu-food h3 {
-		margin: 0 auto 20px;
-	}
-	
-	.menu h4 {
-		font-size: 24px;
-	}
-	
-	.menu li {
-		font-size: 16px;
-		margin: 0px 0px 6px;
-	}
-	
-	#instagram h2 {
-		font-size: 24px;
-		margin: 0px;
-		padding: 20px 0px;
-	}
-
-}
-
-/* Small devices breakpoint
------------------------------------------------------------------------------ */
-
-@media screen and (max-width: 480px) {
-
-	.menu-bbq,
-	.menu-sides,
-	.menu-drinks {
-		width: 100%;
-		float: left;
-	}
-	.menu-bbq {
-		border-right: 0px;
-	}
-	.specials {
-		width: 90%;
-		padding: 5%;
+		border-top: 1px solid #efefef;
+		box-shadow: -1px 0 3px #d5d5d5;
 		height: auto;
-		margin-bottom: 20px;
-	}
-	
-	#google-maps {
-		height: auto;
-		margin-bottom: 30px;
 	}
 	#address {
-		top: 0px;
-		width: 90%;
-		padding: 5px;
-		margin-right: 0px;
-		height: 230px;
-	}
-	
-	#address h3 {
-		background: none;
-		height: auto;
+		float: none;
+		margin: 0 auto;
 		width: auto;
-		margin: 10px 0px;
+		top: 0;
 	}
-	
-	#address h3 span {
-		display: block;
-		font-family: sniglet, sans-serif;
-		font-size: 24px;
-		color: #bc0505;
-		line-height: 34px;
-		text-align: center;
-		
-	}
-	
 	#address a {
-		width: 130px;
-		margin: 7px;
-		
+		float: none;
+		display: block;
+		width: 100%;
 	}
-	.user-text {
-		-moz-column-count: 1; /* Firefox */
-		-webkit-column-count: 1; /* Safari and Chrome */
-		column-count: 1;
+	footer {
+		line-height: 20px;
+	}
+	footer p {
+		padding-bottom: 20px;
+	}
+	footer p, 
+	footer ul {
+		float: none;
+	}
+	footer li {
+		text-align: left;
+	}
+	footer li:first-child {
+		margin-left: 0;
+	}
+	footer li a {
+		font-size: 11px;
 	}
 }

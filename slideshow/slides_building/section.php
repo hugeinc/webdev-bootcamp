@@ -10,15 +10,6 @@
     <li>Check to make sure you have an body tag</li>
 </ol>
 </div>
-
-<div class="slide">
-<h4>**Inside Head tag.</h4>
-<p class="smaller">if it does not already exist, add the following:</p>
-<pre>
-<title>Holden's Hog Tie</title>
-</pre>
-</div>
-
 <div class="slide">
 <h4>The HTML: Adding the meta tags.</h4>
 <p class="smaller">inside the head tag, add the following <strong>before</strong> the title tag</p>
@@ -48,11 +39,6 @@
         <li><a href="#">Location</a></li>
         <li><a href="#">Lorem Ipsum</a></li>
     </ul>
-    <a href="#" id="mobile-hamburger">
-        <span class="icon-bg">
-            <span class="icon-bar"></span>
-        </span>
-    </a>
 </nav>
 </pre>
 </div>
@@ -167,9 +153,6 @@ nav a {
     color: #000;
     font-size: 1.5em; /* 18/16 */
     text-transform: uppercase;
-}
-#mobile-hamburger {
-    display: none;
 }
 </pre>
 </div>
