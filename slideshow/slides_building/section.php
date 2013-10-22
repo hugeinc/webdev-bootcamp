@@ -101,6 +101,11 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
+</pre>
+</div>
+
+<div class="slide">
+    <pre>
 nav,
 header,
 h1,
@@ -114,7 +119,12 @@ section,
 }
 .wrapper {
     height:  100%;
-}
+}    
+    </pre>
+</div>
+
+<div class="slide">
+    <pre>
 h1 {
     margin: 20px auto 0 auto;
 }
@@ -129,7 +139,7 @@ a,
 a:visited {
     color: #1a1a1a;
 }
-</pre>
+    </pre>
 </div>
 
 <div class="slide">
@@ -144,6 +154,12 @@ nav ul {
     width: 100%;
     text-align: center;
 }
+
+</pre>
+</div>
+
+<div class="slide">
+<pre>
 nav li {
     font-size: 0.75em;
     display: inline;
@@ -312,6 +328,11 @@ h1 span {
     margin: 0 0 50px;
 }
 
+</pre>
+</div>
+
+<div class="slide">
+<pre>
 .menu-category li {
     font-family: bevan, sans-serif;
     font-size: 1.125em; /* 18/16 */
@@ -449,7 +470,7 @@ h1 span {
 
 <div class="slide">
     <h4>Non-reusable</h4>
-    <p class="smaller">styles that are specific to the BBQ menu</p>
+    <p class="smaller">Styles that are specific to the BBQ menu</p>
 <pre>
 .menu-bbq .menu-section {
     margin: 0 9%;
@@ -479,7 +500,7 @@ h1 span {
 </div>
 
 <div class="slide">
-<p class="smaller">styles that are specific to the Sides menu</p>
+<p class="smaller">Styles that are specific to the Sides menu</p>
 <pre>
 .menu-sides .menu-section {
     width: 100%;
