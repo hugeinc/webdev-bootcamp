@@ -23,13 +23,24 @@
 <div id="broken-medium-bp2" class="slide">
 </div>
 
+<div class="slide">
+	<h4>Create a new stylesheet</h4>
+	<p>Name it <strong>responsive.css</strong> and put it inside the <strong>css folder</strong></p>
+</div>
 
+<div class="slide">
+	<h4>Reference the new stylesheet in the code</h4>
+	<p>In the <strong>head tag</strong> in <storng>index.html</srong>, add the following.</p>
+<pre>
+<link rel="stylesheet" href="css/responsive.css" />
+</pre>
+</div>
 
 <div class="slide">
 	<h4>Definig your first breakpoint</h4>
-	<p class="smaller">add the following to the end of your CSS file. All styles inside this block will apply when the browser is between 0 to 999px</p></p>
+	<p class="smaller">In the new <strong>responsive.css</strong>. All styles inside this block will apply when the browser is between 0 to 999px</p></p>
 <pre>
-@media all and (min-width: 0) and (max-width: 999px) {
+@media all and (max-width: 999px) {
 
 }
 </pre>
@@ -37,6 +48,7 @@
 
 <div class="slide">
 	<h4>Styles that optimizies the layout</h4>
+	<p class="smaller">put this inside the breakpoint you just defined.</p>
 <pre>
 body {
 	width: 100%;
@@ -70,6 +82,23 @@ h1 {
 </div>
 
 <style>
+	#com-1 {
+		background: transparent url('images/rwd-com-1.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-1" class="slide">
+</div>
+
+<style>
+	#com-2 {
+		background: transparent url('images/rwd-com-2.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-2" class="slide">
+</div>
+
+
+<style>
 	#broken-small-bp {
 		background: transparent url('images/broken-small-breakpoint.jpg') center 0 no-repeat;
 	}
@@ -80,8 +109,9 @@ h1 {
 <div class="slide">
 	<h4>First let's define another breakpoint</h4>
 	<p class="smaller">All styles inside this block will apply when the browser is between 0 to 660px</p>
+	<p class="smaller">Add this inside <strong>responsive.css</strong>, after the 999px breakpoint</p>
 <pre>
-@media all and (min-width: 0) and (max-width: 660px) {
+@media all and (max-width: 660px) {
 
 }
 </pre>
@@ -122,7 +152,8 @@ h1 {
 
 <div class="slide">
 	<h4>Revisit our CSS of the navigation</h4>
-	<p class="smaller">add the CSS for the mobile button</a>
+	<p class="smaller">find your CSS for the navigaion in <strong>global.css</strong>, add the CSS for the mobile button in <strong style="color: green;">global.css</strong>, not <strong style="color: red;">responsive.css</strong></a>
+	<p class="smaller">add this after the <strong>nav a</strong> block and before the <strong>header</strong> block</p>
 <pre>
 #mobile-hamburger {
 	display: none;
@@ -132,22 +163,115 @@ h1 {
 
 
 <div class="slide">
-	<h4>Our new styles for nav</h4>
-	<p class="smaller">put these styles into the breakpoint</p>
+	<h4>Our new basic styles in the 660px breakpoint</h4>
+	<p class="smaller">put these styles into the 660px breakpoint</p>
 <pre>
-.main-nav {
-	font-family: bevan, sans-serif;
-	margin: 50px auto 0;
-}
-nav ul {
-	overflow: hidden;
-	width: 100%;
-	text-align: center;
+body {
+	border: 0;
+	background-size: 550px;
+	background-position: center top;
 }
 </pre>
 </div>
 
 <div class="slide">
+	<h4>Our new styles for the navigation in the 660px breakpoint</h4>
+	<p class="smaller"></p>
+<pre>
+.main-nav {
+	background-color: #f3f3f3;
+	border-bottom: 5px #bc0505 solid;
+	margin: 0;
+	padding: 0 20px;
+	position: absolute;
+	width: 100%;
+}
+.main-nav ul {
+	padding: 15px 0;
+}
+.main-nav li {
+	float: none;
+	margin-top: 20px;
+	text-align: left;
+	width: auto;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.main-nav li:first-child {
+	margin-top: 0;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Styles for the hamburger button</h4>
+<pre>
+#mobile-hamburger {
+	background-color: #bc0505;
+	display: block;
+	height: 20px;
+	padding: 10px;
+	position: absolute;
+	right: 20px;
+	width: 20px;
+}
+#mobile-hamburger span {
+	display: block;
+	position: relative;
+	width: auto;
+	top: 5px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#mobile-hamburger .icon-bg {
+	background-color: #fff;
+	height: 15px;
+}
+#mobile-hamburger .icon-bg .icon-bar {
+	background-color: transparent;
+	border-top: 5px solid #bc0505;
+	height: 5px;
+	position: relative;
+	top: 5px;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Adding new behavior for the navigation </h4>
+<pre>
+nav ul {
+	display: none;
+}
+nav.expanded ul {
+	display: block;
+}
+nav li a {
+	float: none;
+	font-size: 0.9375em; /* 15/16 */
+}
+</pre>
+</div>
+
+<style>
+	#com-3 {
+		background: transparent url('images/rwd-com-3.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-3" class="slide">
+</div>
+
+
+
+<!-- <div class="slide">
 <pre>
 nav li {
 	font-size: 0.75em;
@@ -163,7 +287,7 @@ nav a {
 	display: none;
 }
 </pre>
-</div>
+</div> -->
 
 <style>
 	#broken-small-bp2 {

@@ -44,6 +44,17 @@
 </div>
 
 <div class="slide">
+<h4>The HTML: Page Container</h4>
+<pre>
+<div class="page">
+
+<!-- menu here -->
+
+</div>
+</pre>
+</div>
+
+<div class="slide">
 <h4>The HTML: Adding the page title</h4>
 <p class="smaller">add this after .main-nav</p>
 <pre>
@@ -104,8 +115,18 @@ body {
 </pre>
 </div>
 
+<style type="text/css">
+        #insti-1 {
+            padding: 0; background-image:url('images/insti-1.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-1" class="slide">
+</div>
+
 <div class="slide">
-    <pre>
+    <p class="smaller">after the <strong>.page</strong> block, add:</p>
+<pre>
 nav,
 header,
 h1,
@@ -120,7 +141,7 @@ section,
 .wrapper {
     height:  100%;
 }    
-    </pre>
+</pre>
 </div>
 
 <div class="slide">
@@ -141,6 +162,7 @@ a:visited {
 }
     </pre>
 </div>
+
 
 <div class="slide">
 <h4>The CSS: Navigation</h4>
@@ -173,6 +195,15 @@ nav a {
 </pre>
 </div>
 
+<style type="text/css">
+        #insti-2 {
+            padding: 0; background-image:url('images/insti-2.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-2" class="slide">
+</div>
+
 <div class="slide">
 <h4>The CSS: Page Title (H1)</h4>
 <pre>
@@ -190,6 +221,15 @@ h1 span {
     display: none;
 }
 </pre>
+</div>
+
+<style type="text/css">
+        #insti-3 {
+            padding: 0; background-image:url('images/insti-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-3" class="slide">
 </div>
 
 <div class="slide">
@@ -216,6 +256,36 @@ h1 span {
 }
 </pre>
 </div>
+
+
+<div class="slide">
+<h4>em</h4>
+<p class="smaller">target = 26 from PSD</p>
+<p class="smaller">root = 16 from Body</p>
+<p class="smaller">em = t/r</p>
+<pre>
+body {
+   ...
+    font-size: 16px;
+}
+...
+...
+font-size: 1.625em; /* 26/16 */
+</pre>
+</div>
+
+
+
+<style>
+    #percentage {
+       padding: 0; background-image:url('images/percentage.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+<div id="percentage" class="slide">
+</div>
+
+
+
 
 <div class="slide">
 <pre>
@@ -266,6 +336,16 @@ h1 span {
 }
 </pre>
 </div>
+
+<style type="text/css">
+        #insti-4 {
+            padding: 0; background-image:url('images/insti-4.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-4" class="slide">
+</div>
+
 
 <div class="slide">
 <h4>The HTML: Menus</h4>
@@ -463,9 +543,79 @@ h1 span {
 </pre>
 </div>
 
+
+<style type="text/css">
+        #insti-5 {
+            padding: 0; background-image:url('images/insti-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-5" class="slide">
+</div>
+
 <div class="slide">
     <h4>Fill out the other menu content, using the markup we already have.</h4>
     <p>You should notice that it's looking pretty good already!</p>
+</div>
+
+<div class="slide">
+    <h4>Styles for other menus</h4>
+    <p class="smaller">the side menu</p>
+<pre>
+.menu-sides {
+    float: left;
+    width: 32.6%; /* 326px/1000 */
+}
+.menu-sides h3 {
+    background: url('sprites/header-sides.gif') no-repeat top left;
+    height: 84px;
+    width: 203px;
+}
+.menu-sides h3 span {
+    display: none;
+}
+</pre>
+</div>
+
+<div class="slide">
+    <h4>Styles for other menus</h4>
+    <p class="smaller">the drinks menu</p>
+<pre>
+.menu-drinks {
+    margin: 0 auto;
+    width: 670px;
+}
+.menu-drinks h3 {
+    background: url('sprites/header-drinks.gif') no-repeat top left;
+    height: 51px;
+    width: 181px;
+}
+.menu-drinks h3 span {
+    display: none;
+}
+.menu-drinks .menu-section {
+    width: 335px;
+    margin: 0;
+}
+</pre>
+</div>
+
+
+<style type="text/css">
+        #insti-6 {
+            padding: 0; background-image:url('images/insti-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-6" class="slide">
+</div>
+<style type="text/css">
+        #insti-7 {
+            padding: 0; background-image:url('images/insti-7.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-7" class="slide">
 </div>
 
 <div class="slide">
@@ -524,4 +674,67 @@ h1 span {
     display: none;
 }
 </pre>
+</div>
+
+<div class="slide">
+<h4>The HTML: Footer</h4>
+<pre>
+<footer class="clearfix">
+    <nav>
+        <p>Holden's Hog Tie, 50 E Cesar Chavez St, Austin, TX &dot; (500) 867-5309</p>
+        <ul>
+            <li><a href="#">About Holden's</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+        </ul>
+    </nav>
+</footer>
+</pre>
+</div>
+
+<div class="slide">
+<h4>The CSS: Footer</h4>
+<pre>
+footer {
+    color: #d56161;
+    background: #bc0505;
+    padding: 15px;
+    font-size: 0.875em; /* 14/16 */
+}
+footer p {
+    float: left;
+}
+footer nav {
+    font-family: arial, sans-serif;
+}
+</pre>
+</div>
+
+<div class="slide">
+<h4>The CSS: Footer</h4>
+<pre>
+footer ul {
+    float: right;
+}
+footer li {
+    float: left;
+    margin-left: 15px;
+    width: auto;
+}
+footer a ,
+footer a:visited {
+    font-size: 0.875em; /* 14/16 */
+    color: #d56161;
+}
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-8 {
+            padding: 0; background-image:url('images/insti-8.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-8" class="slide">
 </div>

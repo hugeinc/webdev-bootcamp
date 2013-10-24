@@ -1,6 +1,6 @@
 /* Media Queries – Responsive
 ---------------------------------------------------------------------------- */
-@media all and (min-width: 0) and (max-width: 999px) {
+@media all and (max-width: 999px) {
 	body {
 		width: 100%;
 	}
@@ -31,7 +31,7 @@
 
 	}
 }
-@media all and (min-width: 0) and (max-width: 660px) {
+@media all and (max-width: 660px) {
 	body {
 		border: 0;
 		background-size: 550px;

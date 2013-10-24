@@ -13,7 +13,8 @@
     <script src="libs/js/slides.js"></script>
     
     <!-- references to custom stuff goes here. -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <script src="libs/js/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     
