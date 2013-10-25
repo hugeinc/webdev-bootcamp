@@ -413,10 +413,6 @@ footer li a {
 </pre>
 </div>
 
-<div class="slide">
-	<h4>Next step</h4>
-	<p>The content is still messed up within this breakpoint. Go ahead and style the rest of the page.</p>
-</div>
 
 
 <div class="slide">
