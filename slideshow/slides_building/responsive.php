@@ -338,14 +338,6 @@ nav a {
 </pre>
 </div> -->
 
-<style>
-	#broken-small-bp2 {
-		background: transparent url('images/broken-small-breakpoint.jpg') center -1472px no-repeat;
-	}
-</style>
-<div id="broken-small-bp2" class="slide">
-</div>
-
 
 <div class="slide">
 	<h4>Styles for menu</h4>
