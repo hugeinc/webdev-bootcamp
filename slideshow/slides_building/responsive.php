@@ -273,6 +273,11 @@ h1 {
 	margin: 0;
 	width: 100%;
 }
+</pre>
+</div>
+
+<div class="slide">
+<pre>
 #content {
 	padding: 0 20px;
 }
@@ -283,7 +288,7 @@ h1 {
 	text-align: left;
 	top: 0;
 }
-</pre>
+<pre>
 </div>
 
 
@@ -401,24 +406,25 @@ footer ul {
 </div>
 
 <div class="slide">
+	<h4>Footer</h4>
 <pre>
 footer li {
 	text-align: left;
 }
 footer li:first-child {
-ssssmargin-left: 0;
+	margin-left: 0;
 }
 footer li a {
-ssssfont-size: 11px;
+	font-size: 11px;
 }
 </pre>
 </div>
 
-<!-- <div class="slide">
+<div class="slide">
 	<h4>Next step</h4>
 	<p>The content is still messed up within this breakpoint. Go ahead and style the rest of the page.</p>
 </div>
- -->
+
 
 <div class="slide">
 	<h4>Questions?</h4>
