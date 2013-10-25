@@ -166,6 +166,8 @@
 /* Javascript
 ----------------------------------------------------------------------------------------------- */
 ?>
+        <?php include('slides_js/holdens_js.php') ?>
+
         <?php include('slides_js/intro.php') ?>
 
         <?php include('slides_js/types.php') ?>
@@ -180,8 +182,6 @@
         
         <?php include('slides_js/events_common.php') ?>
         
-        <?php include('slides_js/holdens_js.php') ?>
-
 
 
 <?php 

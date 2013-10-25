@@ -1,5 +1,5 @@
 <div class="slide invert black section">
-    <h1 class="white">Examples.</h1>
+    <h1 class="white">Javascript.</h1>
 </div>
 
 <div class="slide">
@@ -37,11 +37,13 @@ var mobiMenuBtn = document.getElementById('mobile-hamburger');
     <pre>
 mobiMenuBtn.onclick = function( e ){
     e.preventDefault();
-    var allClasses = this.parentNode.className, //caching all classes attached to the element.
+    //caching all classes attached to the element.
+    var allClasses = this.parentNode.className, 
         testClass;
-    if( testClass = allClasses.match(/\sexpanded\s?/i) ){ //test to see if the nav has already been expanded.
+    //test to see if the nav has already been expanded.
+    if( testClass = allClasses.match(/\sexpanded\s?/i) ){ 
 
-        //if the nav is already expanded, we take out the class .expanded.
+        //if nav is expanded, we take out the class 'expanded'
         this.parentNode.className = allClasses.substring( 0, allClasses.indexOf(testClass[0]) );
         return;
 
@@ -51,15 +53,18 @@ mobiMenuBtn.onclick = function( e ){
 }        
     </pre>
 </div>
-
+<?php
+/*
 <div class="slide">
     <h4>Refactoring.</h4>
     
     <p>To refactor this code, let's convert to the literal notation previously discussed.</p>
-    <p>Assuming a namespace of <strong>HOLDENS</strong>, let's call this <strong>Global</strong> with two methods, <strong>init</strong> and <strong>setUpMobileMenu</strong></p>
+    <p>Using a namespace of <strong>HOLDENS</strong>, let's call this object <strong>Global</strong> with two methods, <strong>init</strong> and <strong>setUpMobileMenu</strong></p>
     <p>Open up global.js in the website directory on your usb drive to see how this can be done if you are stuck.</p>
    
 </div>
+*/
+?>
 
 <div class="slide">
     <h4>Google Maps.</h4>
