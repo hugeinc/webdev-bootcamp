@@ -359,14 +359,15 @@ nav a {
 	   -moz-box-sizing: border-box;
 	   		box-sizing: border-box;
 }
-.menu-category h3 {
-	margin:0 0 20px
-}
+
 </pre>
 </div>
 
 <div class="slide">
 <pre>
+.menu-category h3 {
+	margin:0 0 20px
+}
 .menu-category .menu-section ul {
 	height: auto;
 }
