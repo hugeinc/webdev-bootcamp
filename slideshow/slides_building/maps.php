@@ -49,8 +49,8 @@
     height: 270px;
     float: right;
     margin-right: 85px;
-    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+       -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+       box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
     font-size: 14px;
 }
 </pre>

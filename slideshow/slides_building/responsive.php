@@ -37,7 +37,7 @@
 </div>
 
 <div class="slide">
-	<h4>Definig your first breakpoint</h4>
+	<h4>Defining your first breakpoint</h4>
 	<p class="smaller">In the new <strong>responsive.css</strong>. All styles inside this block will apply when the browser is between 0 to 999px</p></p>
 <pre>
 @media all and (max-width: 999px) {
@@ -47,7 +47,7 @@
 </div>
 
 <div class="slide">
-	<h4>Styles that optimizies the layout</h4>
+	<h4>Styles that optimize the layout</h4>
 	<p class="smaller">put this inside the breakpoint you just defined.</p>
 <pre>
 body {
@@ -68,9 +68,9 @@ h1 {
 .user-text {
 	width: 50%;
 	padding: 0;
-	-webkit-column-count: 1;
+	   -webkit-column-count: 1;
 	   -moz-column-count: 1;
-	   		column-count: 1;
+	   column-count: 1;
 }
 .user-text p {
 	padding-top: 15px;
@@ -107,7 +107,7 @@ h1 {
 </div>
 
 <div class="slide">
-	<h4>First let's define another breakpoint</h4>
+	<h4>Let's define another breakpoint</h4>
 	<p class="smaller">All styles inside this block will apply when the browser is between 0 to 660px</p>
 	<p class="smaller">Add this inside <strong>responsive.css</strong>, after the 999px breakpoint</p>
 <pre>
@@ -119,8 +119,8 @@ h1 {
 
 
 <div class="slide">
-	<h4>Revisiting our HTML of the navigation</h4>
-	<p class="smaller">add the mobile nav button to the menu</p>
+	<h4>Revisiting our navigation HTML</h4>
+	<p class="smaller">Add the mobile nav button to the menu</p>
 <pre>
  <a href="#" id="mobile-hamburger">
     <span class="icon-bg">
@@ -151,9 +151,9 @@ h1 {
 
 
 <div class="slide">
-	<h4>Revisit our CSS of the navigation</h4>
-	<p class="smaller">find your CSS for the navigaion in <strong>global.css</strong>, add the CSS for the mobile button in <strong style="color: green;">global.css</strong>, not <strong style="color: red;">responsive.css</strong></a>
-	<p class="smaller">add this after the <strong>nav a</strong> block and before the <strong>header</strong> block</p>
+	<h4>Revisit our navigation CSS</h4>
+	<p class="smaller">Find your CSS for the navigaion in <strong>global.css</strong>, add the CSS for the mobile button in <strong style="color: green;">global.css</strong>, not <strong style="color: red;">responsive.css</strong></a>
+	<p class="smaller">Add this after the <strong>nav a</strong> block and before the <strong>header</strong> block</p>
 <pre>
 #mobile-hamburger {
 	display: none;
@@ -163,8 +163,7 @@ h1 {
 
 
 <div class="slide">
-	<h4>Our new basic styles in the 660px breakpoint</h4>
-	<p class="smaller">put these styles into the 660px breakpoint</p>
+	<h4>Put these styles into the 660px breakpoint</h4>
 <pre>
 body {
 	border: 0;
@@ -175,7 +174,7 @@ body {
 </div>
 
 <div class="slide">
-	<h4>Our new styles for the navigation in the 660px breakpoint</h4>
+	<h4>Our new navigation styles for the 660px breakpoint</h4>
 	<p class="smaller"></p>
 <pre>
 .main-nav {
@@ -288,7 +287,7 @@ h1 {
 	text-align: left;
 	top: 0;
 }
-<pre>
+</pre>
 </div>
 
 
@@ -305,9 +304,9 @@ h1 {
 	float: none;
 	padding: 0;
 	width: auto;
-	-webkit-column-count: 1;
+	   -webkit-column-count: 1;
 	   -moz-column-count: 1;
-	   		column-count: 1;
+	   column-count: 1;
 }
 .user-text + img {
 	display: none;
@@ -360,9 +359,9 @@ nav a {
 .menu-category {
 	width: 100%;
 	text-align: left;
-	-webkit-box-sizing: border-box;
+	   -webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
-	   		box-sizing: border-box;
+	   box-sizing: border-box;
 }
 
 </pre>
@@ -371,7 +370,7 @@ nav a {
 <div class="slide">
 <pre>
 .menu-category h3 {
-	margin:0 0 20px
+	margin: 0 0 20px
 }
 .menu-category .menu-section ul {
 	height: auto;
@@ -417,7 +416,7 @@ footer li a {
 
 <div class="slide">
 	<h4>Questions?</h4>
-	<p>We now have a full website (minus some supplemental areas), totally responsive-ified!</p>
+	<p>We now have a fully responsive web site!</p>
 </div>
 
 
