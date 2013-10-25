@@ -27,9 +27,6 @@
 	.user-text p:first-child {
 		padding-top: 0;
 	}
-	.cowboy-icon {
-
-	}
 }
 @media all and (max-width: 660px) {
 	body {
