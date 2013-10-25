@@ -261,6 +261,55 @@ nav li a {
 </pre>
 </div>
 
+<div class="slide">
+<pre>
+header {
+	height: 306px;
+}
+h1 {
+	background-size: 80%;
+	background-position: center 20px;
+	height: 295px;
+	margin: 0;
+	width: 100%;
+}
+#content {
+	padding: 0 20px;
+}
+#content h2 {
+	background: none;
+	font-size: 1.4375em; /* 23/16 */
+	padding: 10px 0 25px 0;
+	text-align: left;
+	top: 0;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+<pre>
+#content h2 img {
+	display: none;
+}
+#content h2 strong {
+	margin-top: 0;
+	width: 100%;
+}
+.user-text {
+	float: none;
+	padding: 0;
+	width: auto;
+	-webkit-column-count: 1;
+	   -moz-column-count: 1;
+	   		column-count: 1;
+}
+.user-text + img {
+	display: none;
+}
+</pre>
+</div>
+
 <style>
 	#com-3 {
 		background: transparent url('images/rwd-com-3.jpg') center 0 no-repeat;
@@ -297,11 +346,79 @@ nav a {
 <div id="broken-small-bp2" class="slide">
 </div>
 
+
 <div class="slide">
+	<h4>Styles for menu</h4>
+<pre>
+.menu-category .menu-section {
+	float: none;
+	text-align: left;
+	margin: 0;
+}
+.menu-category > div {
+	float: none;
+	width: auto;
+	padding: 0 20px;
+}
+.menu-category {
+	width: 100%;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+}
+.menu-category h3 {
+	margin:0 0 20px
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.menu-category .menu-section ul {
+	height: auto;
+}
+.menu-category li {
+	text-align: left;
+}
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Footer</h4>
+<pre>
+footer {
+	line-height: 20px;
+}
+footer p {
+	padding-bottom: 20px;
+}
+footer p, 
+footer ul {
+	float: none;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+footer li {
+	text-align: left;
+}
+footer li:first-child {
+ssssmargin-left: 0;
+}
+footer li a {
+ssssfont-size: 11px;
+}
+</pre>
+</div>
+
+<!-- <div class="slide">
 	<h4>Next step</h4>
 	<p>The content is still messed up within this breakpoint. Go ahead and style the rest of the page.</p>
 </div>
-
+ -->
 
 <div class="slide">
 	<h4>Questions?</h4>
