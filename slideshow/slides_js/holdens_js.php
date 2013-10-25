@@ -4,7 +4,7 @@
 
 <div class="slide">
     <h4>Including a javascript file.</h4>
-    <p>To get started with our website javascript, let's add the following just above the body tag:</p>
+    <p>To get started with our website javascript, let's add the following just above the closing body tag:</p>
     <pre>
 <script type="text/javascript" src="js/global.js"></script>
 
