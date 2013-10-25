@@ -212,7 +212,7 @@ header {
 }
 
 h1 {
-    background: url('sprites/header.png') no-repeat top left;
+    background: url('sprites/header.png') no-repeat top center;
     width: 100%;
     height: 178px;
 }
@@ -224,10 +224,10 @@ h1 span {
 </div>
 
 <style type="text/css">
-        #insti-3 {
-            padding: 0; background-image:url('images/insti-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
-        }
-    </style>
+    #insti-3 {
+        padding: 0; background-image:url('images/insti-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
 
 <div id="insti-3" class="slide">
 </div>
@@ -238,7 +238,7 @@ h1 span {
 #content {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-               box-sizing: border-box;
+            box-sizing: border-box;
 }
 </pre>
 </div>
@@ -369,10 +369,6 @@ font-size: 1.625em; /* 26/16 */
     border-bottom: 2px #eaeaea solid;
     padding: 20px 0 0;
 }
-.menu-drinks {
-    margin: 0 auto;
-    width: 670px;
-}
 </pre>
 </div>
 
@@ -429,21 +425,6 @@ font-size: 1.625em; /* 26/16 */
 </div>
 
 <div class="slide">
-<h4>Back to floats &mdash; menu content</h4>
-<pre>
-.menu-bbq {
-    width: 67%; /* 672px; */
-    border-right: 2px #eaeaea solid;
-    float: left;
-}
-.menu-sides {
-    float: left;
-    width: 32.6%; /* 326px */
-}
-</pre>
-</div>
-
-<div class="slide">
     <h4>Menu BBQ. – Menu title</h4>
     <p class="smaller">This goes in menu-bbq div</p>
 <pre>
@@ -487,6 +468,23 @@ font-size: 1.625em; /* 26/16 */
 </div>
 </pre>
 </div>
+
+<div class="slide">
+<h4>Back to floats &mdash; menu content</h4>
+<pre>
+.menu-bbq {
+    width: 67%; /* 672px; */
+    border-right: 2px #eaeaea solid;
+    float: left;
+}
+.menu-sides {
+    float: left;
+    width: 32.6%; /* 326px */
+}
+</pre>
+</div>
+
+
 
 <div class="slide">
     <h4>Reusing styles.</h4>
@@ -625,10 +623,8 @@ font-size: 1.625em; /* 26/16 */
 .menu-bbq .menu-section {
     margin: 0 9%;
 }
-.menu-bbq {
-    width: 67%; /* 672px/1000 */
-    border-right: 2px #eaeaea solid;
-    float: left;
+.menu-bbq ul:nth-child(2) {
+    height: 250px;
 }
 </pre>
 </div>

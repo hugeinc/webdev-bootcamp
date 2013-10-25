@@ -183,6 +183,15 @@ h1 span {
 	font-size: 0.875em; /* 14/16 */
 	font-family: Arial, sans-serif;
 }
+.menu-bbq {
+	width: 67%; /* 672px/1000 */
+	border-right: 2px #eaeaea solid;
+	float: left;
+}
+.menu-sides {
+	float: left;
+	width: 32.6%; /* 326px/1000 */
+}
 .menu-sides .menu-section {
 	width: 100%;
 	margin: 0;
@@ -192,11 +201,6 @@ h1 span {
 }
 /* Section - Menu - BBQ
 ----------------------------------------------------------------------------- */
-.menu-bbq {
-	width: 67%; /* 672px/1000 */
-	border-right: 2px #eaeaea solid;
-	float: left;
-}
 .menu-bbq h3 {
 	background: url('sprites/header-bbq.gif') no-repeat top left;
 	height: 84px;
@@ -210,10 +214,6 @@ h1 span {
 }
 /* Section - Menu - Sides
 ----------------------------------------------------------------------------- */
-.menu-sides {
-	float: left;
-	width: 32.6%; /* 326px/1000 */
-}
 .menu-sides h3 {
 	background: url('sprites/header-sides.gif') no-repeat top left;
 	height: 84px;
