@@ -130,6 +130,7 @@ h1 span {
 .user-text {
 	float: left;
 	width: 67%;
+	margin-bottom: 2.5em; /* 40/16 */
 	padding-left: 50px;
 	line-height: 1.25em; /* 20/16 */
 	font-size: 0.8125em; /* 13/16 */
@@ -144,101 +145,92 @@ h1 span {
 }
 /* Section - Menu
 ----------------------------------------------------------------------------- */
-#menu-food {
-	margin: 50px auto 30px;
-	color: #000;
-	border-bottom: 2px #eaeaea solid;
-	padding: 20px 0 0;
-}
+/* Common Menu containers */
 .menu-category {
-	text-align: center;
+    text-align: center;
 }
 .menu-category h3 {
-	margin: 0 auto 40px;
+    margin: 0 auto 40px;
 }
 .menu-category h4 {
-	font-family: sniglet, sans-serif;
-	font-size: 1.875em; /* 30/16 */
-	color: #bc0505;
-	margin: 0 0 20px;
-	text-transform: uppercase;
+    font-family: sniglet, sans-serif;
+    font-size: 1.875em; /* 30/16 */
+    color: #bc0505;
+    margin: 0 0 20px;
+    text-transform: uppercase;
 }
 .menu-category .menu-section {
-	width: 32%; /*216px/672; */
-	margin: 0 10%;
-	float: left;
+    width: 32%; /*216px/672; */
+    margin: 0 10%;
+    float: left;
 }
 .menu-category ul {
-	margin: 0 0 50px;
+    margin: 0 0 50px;
 }
 .menu-category li {
-	font-family: bevan, sans-serif;
-	font-size: 1.125em; /* 18/16 */
-	text-align: center;
-	margin: 0 0 15px;
-	color: #000;
+    font-family: bevan, sans-serif;
+    font-size: 1.125em; /* 18/16 */
+    text-align: center;
+    margin: 0 0 15px;
+    color: #000;
 }
 .menu-category li span {
-	display: block;
-	font-size: 0.875em; /* 14/16 */
-	font-family: Arial, sans-serif;
+    display: block;
+    font-size: 0.875em; /* 14/16 */
+    font-family: Arial, sans-serif;
 }
+/* BBQ Section */
 .menu-bbq {
 	width: 67%; /* 672px/1000 */
 	border-right: 2px #eaeaea solid;
 	float: left;
 }
-.menu-sides {
-	float: left;
-	width: 32.6%; /* 326px/1000 */
-}
-.menu-sides .menu-section {
-	width: 100%;
-	margin: 0;
-}
 .menu-bbq .menu-section {
-	margin: 0 9%;
-}
-/* Section - Menu - BBQ
------------------------------------------------------------------------------ */
-.menu-bbq h3 {
-	background: url('sprites/header-bbq.gif') no-repeat top left;
-	height: 84px;
-	width: 190px;
-}
-.menu-bbq h3 span {
-	display: none;
+    margin: 0 9%;
 }
 .menu-bbq ul:nth-child(2) {
-	height: 250px;
+    height: 250px;
 }
-/* Section - Menu - Sides
------------------------------------------------------------------------------ */
+.menu-bbq h3 {
+    background: url('sprites/header-bbq.gif') no-repeat top left;
+    height: 84px;
+    width: 190px;
+}
+.menu-bbq h3 span {
+    display: none;
+}
+.menu-bbq ul:nth-child(2) {
+    height: 250px;
+}
+/* Sides Section */
+.menu-sides {
+    float: left;
+    width: 32.6%; /* 326px/1000 */
+}
 .menu-sides h3 {
-	background: url('sprites/header-sides.gif') no-repeat top left;
-	height: 84px;
-	width: 203px;
+    background: url('sprites/header-sides.gif') no-repeat top left;
+    height: 84px;
+    width: 203px;
 }
 .menu-sides h3 span {
-	display: none;
+    display: none;
 }
-/* Section - Menu - Drink
------------------------------------------------------------------------------ */
+/* Drinks Section */
 .menu-drinks {
-	margin: 0 auto;
-	width: 670px;
+    margin: 0 auto;
+    width: 670px;
 }
 .menu-drinks h3 {
-	background: url('sprites/header-drinks.gif') no-repeat top left;
-	height: 51px;
-	width: 181px;
+    background: url('sprites/header-drinks.gif') no-repeat top left;
+    height: 51px;
+    width: 181px;
 }
 .menu-drinks h3 span {
-	display: none;
+    display: none;
 }
 .menu-drinks .menu-section {
-	width: 335px;
-	margin: 0;
+    width: 335px;
+    margin: 0;
 }
 /* Section - Google Maps
 ----------------------------------------------------------------------------- */
@@ -329,13 +321,13 @@ footer p {
 footer nav {
 	font-family: arial, sans-serif;
 }
-footer ul {
-	float: right;
-}
 footer li {
 	float: left;
 	margin-left: 15px;
 	width: auto;
+}
+footer li:first-child {
+	margin: 0;
 }
 footer a ,
 footer a:visited {

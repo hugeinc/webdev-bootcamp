@@ -390,6 +390,9 @@ footer {
 footer p {
 	padding-bottom: 20px;
 }
+footer nav ul {
+	display: block;
+}
 footer p, 
 footer ul {
 	float: none;

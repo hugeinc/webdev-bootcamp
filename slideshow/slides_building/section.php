@@ -30,7 +30,20 @@
 </div>
 
 <div class="slide">
+<h4>The HTML: Page Container</h4>
+<p class="smaller">Everything on the page will be included inside .page</p>
+<pre>
+<div class="page">
+
+    <!-- menu here -->
+
+</div>
+</pre>
+</div>
+
+<div class="slide">
 <h4>The HTML: Navigation</h4>
+<p class="smaller">we are now adding the menu inside .page</p>
 <pre>
 <nav class="main-nav">
     <ul>
@@ -43,20 +56,11 @@
 </pre>
 </div>
 
-<div class="slide">
-<h4>The HTML: Page Container</h4>
-<pre>
-<div class="page">
 
-<!-- menu here -->
-
-</div>
-</pre>
-</div>
 
 <div class="slide">
 <h4>The HTML: Adding the page title</h4>
-<p class="smaller">add this after .main-nav</p>
+<p class="smaller">add this after .main-nav.This is the title of the page.</p>
 <pre>
 <header>
     <h1><span>Holden's Hog Tie</span></h1>
@@ -64,21 +68,6 @@
 </pre>
 </div>
 
-
-
-
-<!-- <div class="slide">
-<pre>
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-li {
-    list-style: none;
-}
-</pre>
-</div> -->
 <div class="slide">
 <h4>The HTML: The top content area.</h4>
 <p class="smaller">add this after the page title (Header tag)</p>
@@ -97,6 +86,16 @@ li {
 </section>
 </pre>
 </div>
+
+
+<style type="text/css">
+    #screen-menu-y-header {
+        padding: 0; background-image:url('images/insti-0.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+
+<div id="screen-menu-y-header" class="slide"></div>
 
 <div class="slide">
 <h4>The CSS: Global styles.</h4>
@@ -119,13 +118,15 @@ body {
         #insti-1 {
             padding: 0; background-image:url('images/insti-1.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
         }
-    </style>
+</style>
 
 <div id="insti-1" class="slide">
 </div>
 
 <div class="slide">
+    <p class="smaller">Now we are adding some baseline styles that will not immediately affect the look of the page</p>
     <p class="smaller">after the <strong>.page</strong> block, add:</p>
+
 <pre>
 nav,
 header,
@@ -234,6 +235,7 @@ h1 span {
 
 <div class="slide">
 <h4>The CSS: Top content area (#content)</h4>
+<p class="smaller">some baseline styles for the #content container.</p>
 <pre>
 #content {
     -webkit-box-sizing: border-box;
@@ -257,9 +259,37 @@ h1 span {
 </pre>
 </div>
 
+<div class="slide">
+<pre>
+#content h2 img {
+    float: left;
+    width: 21.1%; /* 211/1000px */
+}
+#content h2 strong {
+    margin-top: 10%;
+    float: right;
+    width: 75%;
+}
+#content h2 span {
+    display: block;
+    text-align: right;
+    font-size: 0.69em; /* 18/26 */
+    color: #d2d2d2;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-3-5 {
+        padding: 0; background-image:url('images/insti-3-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-3-5" class="slide">
+</div>
 
 <div class="slide">
-<h4>em</h4>
+<h4>Calculating em and percentages</h4>
 <p class="smaller">target = 26 from PSD</p>
 <p class="smaller">root = 16 from Body</p>
 <p class="smaller">em = t/r</p>
@@ -284,29 +314,6 @@ font-size: 1.625em; /* 26/16 */
 <div id="percentage" class="slide">
 </div>
 
-
-
-
-<div class="slide">
-<pre>
-#content h2 img {
-    float: left;
-    width: 21.1%; /* 211/1000px */
-}
-#content h2 strong {
-    margin-top: 10%;
-    float: right;
-    width: 75%;
-}
-#content h2 span {
-    display: block;
-    text-align: right;
-    font-size: 0.69em; /* 18/26 */
-    color: #d2d2d2;
-}
-</pre>
-</div>
-
 <div class="slide">
 <h4>The Cowboy</h4>
 <pre>
@@ -322,6 +329,7 @@ font-size: 1.625em; /* 26/16 */
 .user-text {
     float: left;
     width: 67%;
+    margin-bottom: 2.5em; /* 40/16 */
     padding-left: 50px;
     line-height: 1.25em; /* 20/16 */
     font-size: 0.8125em; /* 13/16 */
@@ -349,6 +357,9 @@ font-size: 1.625em; /* 26/16 */
 
 <div class="slide">
 <h4>The HTML: Menus</h4>
+<p class="smaller">Here are the containers for the different menus.</p>
+<p class="smaller">Notice the hierarchy. <strong>.menu-category</strong> is the parent of the differnet menu types (ex. menu-bbq)</p>
+<p class="smaller">After this, there should be no change on your page because we have yet to add any content.</p>
 <pre>
 <section id="menu-food" class="menu-category clearfix">
     <div class="menu-bbq"></div>
@@ -361,7 +372,185 @@ font-size: 1.625em; /* 26/16 */
 </div>
 
 <div class="slide">
-<h4>The CSS: Menus</h4>
+    <h4>Menu BBQ. – Menu title</h4>
+    <p class="smaller">This is the menu title and it goes in <strong>.menu-bbq</strong> container.</p>
+<pre>
+<h3><span>BBQ</span></h3>
+
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-4-1 {
+            padding: 0; background-image:url('images/insti-4-1.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-4-1" class="slide">
+</div>
+
+<div class="slide">
+    <h4>The Menus.</h4>
+    <p class="smaller">Next we are going to add some beef dishes to the menu. Notice <strong>.menu-section</strong> is the parent container of all the beef dishes.</p>
+    <p class="smaller">This goes under the H3.</p>
+<pre>
+<div class="menu-section">
+    <h4>Beef</h4>
+    <ul>
+        <li>Moist Brisket</li>
+        <li>Beef Shoulder</li>
+        <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
+        <li>Boneless Prime Rib</li>
+        <li>1/2 lb Burger</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">Your entire markup for the BBQ menu with Beef dishes shoulw look like this.</p>
+<pre>
+<div class="menu-bbq">
+    <h3><span>BBQ</span></h3>
+    <div class="menu-section">
+            <h4>Beef</h4>
+            <ul>
+                <li>Moist Brisket</li>
+                <li>Beef Shoulder</li>
+                <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
+                <li>Boneless Prime Rib</li>
+                <li>1/2 lb Burger</li>
+            </ul>
+    </div>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-2 {
+        padding: 0; background-image:url('images/insti-4-2.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-2" class="slide">
+</div>
+
+<div class="slide">
+<p class="smaller">Now we can continue to add the Chicken, Sausage and Port sections.</p>
+<p class="smaller">For example, this is the code you need for the chicken section. Notice it has the same hierachy as the beef section</p>
+<p class="smaller">Add this after the <strong>beef .menu-section</strong></p>
+<pre>
+<div class="menu-section">
+    <h4>Chicken</h4>
+    <ul>
+        <li>Market Chicken<span>Available in 1/2 and Full Roaster</span></li>
+        <li>Beer Can Bird</li>
+        <li>Wings</li>
+        <li>Drumsticks</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-3 {
+        padding: 0; background-image:url('images/insti-4-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-3" class="slide">
+</div>
+
+
+<div class="slide">
+<p class="smaller">We can create the Sides menu by following the same hierachy we have established for the BBQ section. First, let's create the menu title.</p>
+<p class="smaller">Type the following inside the <strong>.menu-sides</strong> container.</p>
+<pre>
+<h3><span>Sides</span></h3>
+</pre>
+
+<p class="smaller">Directly after the above code, add the menu section:</p>
+<pre>
+<div class="menu-section">
+    <h4>Potatoes</h4>
+    <ul>
+        <li>Baked</li>
+        <li>Mashed</li>
+        <li>French Fried</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">Also add the Veggie section underneath the Potato section:</p>
+<pre>
+<div class="menu-section">
+    <h4>Veggies</h4>  
+    <ul>
+        <li>Cole Slaw</li>
+        <li>Drunk Beans</li>
+        <li>Collard Greens</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-4 {
+        padding: 0; background-image:url('images/insti-4-4.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-4" class="slide">
+</div>
+
+<div class="slide">
+<p class="smaller">Lastly, we add out drink menu following the same hierachy. First we add the title of the menu in the <strong>.menu-drinks</strong> container</p>
+<pre>
+<h3><span>Drinks</span></h3>
+</pre>
+<p class="smaller">and then the Soft Drinks section.</p>
+<pre>
+<div class="menu-section">
+    <h4>Soft Drinks</h4>
+    <ul>
+        <li>Lemonade</li>
+        <li>Pop</li>
+        <li>Iced Tea</li>
+        <li>Sweet Tea</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">after the Soft Drink .menu-section, we add the Beer section &mdash; out last drink .menu-section</p>
+<pre>
+<div class="menu-section">
+    <h4>Beer</h4>
+    <ul>
+        <li>Budweiser</li>
+        <li>Bud Light</li>
+        <li>Live Oak Brew</li>
+        <li>Brooklyn Lager</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-5 {
+        padding: 0; background-image:url('images/insti-4-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-5" class="slide">
+</div>
+
+<!-- <div class="slide">
+<h4>Styling the menus with CSS</h4>
+<p class="smaller">Let's start by styling some common containers in the menus</p>
 <pre>
 #menu-food {
     margin: 50px auto 30px;
@@ -370,10 +559,11 @@ font-size: 1.625em; /* 26/16 */
     padding: 20px 0 0;
 }
 </pre>
-</div>
+</div> -->
 
 <div class="slide">
-<h4>.menu-category</h4>
+<h4>Styling the menus with CSS</h4>
+<p class="smaller">Let's start by styling some common containers in the menus, for example, the <strong>.menu-category</strong> container</p>
 <pre>
 .menu-category {
     text-align: center;
@@ -424,54 +614,34 @@ font-size: 1.625em; /* 26/16 */
 </pre>
 </div>
 
-<div class="slide">
-    <h4>Menu BBQ. – Menu title</h4>
-    <p class="smaller">This goes in menu-bbq div</p>
-<pre>
-<h3><span>BBQ</span></h3>
+<style type="text/css">
+    #insti-4-6 {
+        padding: 0; background-image:url('images/insti-4-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
 
-</pre>
-</div>
-
-<div class="slide">
-    <h4>The Menus.</h4>
-    <p class="smaller">This goes under the H3</p>
-<pre>
-<div class="menu-section">
-    <h4>Beef</h4>
-    <ul>
-        <li>Moist Brisket</li>
-        <li>Beef Shoulder</li>
-        <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
-        <li>Boneless Prime Rib</li>
-        <li>1/2 lb Burger</li>
-    </ul>
-</div>
-</pre>
+<div id="insti-4-6" class="slide">
 </div>
 
-<div class="slide">
-<h4>The entire BBQ Section with Beef dishes</h4>
-<pre>
-<div class="menu-bbq">
-    <h3><span>BBQ</span></h3>
-    <div class="menu-section">
-            <h4>Beef</h4>
-            <ul>
-                <li>Moist Brisket</li>
-                <li>Beef Shoulder</li>
-                <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
-                <li>Boneless Prime Rib</li>
-                <li>1/2 lb Burger</li>
-            </ul>
-    </div>
-</div>
-</pre>
-</div>
+<!-- <pre>
+#menu-food {
+    margin: 50px auto 30px;
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+    padding: 20px 0 0;
+}
+</pre> -->
+
 
 <div class="slide">
-<h4>Back to floats &mdash; menu content</h4>
+<h4>Let's work on the food menus</h4>
 <pre>
+#menu-food {
+    margin: 50px auto 30px;
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+    padding: 20px 0 0;
+}
 .menu-bbq {
     width: 67%; /* 672px; */
     border-right: 2px #eaeaea solid;
@@ -484,142 +654,24 @@ font-size: 1.625em; /* 26/16 */
 </pre>
 </div>
 
+<style type="text/css">
+    #insti-4-7 {
+        padding: 0; background-image:url('images/insti-4-7.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
 
-
-<div class="slide">
-    <h4>Reusing styles.</h4>
-    <p>You should notice that the menu items are all very similar.  This lets us use the same markup (with different content!) for all the menu items we are doing.</p>
+<div id="insti-4-7" class="slide">
 </div>
 
 <div class="slide">
-    <h4>Some reusable css.</h4>
-    <p class="smaller">all grouped under .menu-category</p>
+    <h4>Styles for the BBQ menu</h4>
+    <p class="smaller">Now that the general layout is defined, we can go in and style the details for each menu.</p>
 <pre>
-.menu-category {
-    text-align: center;
-}
-.menu-category h3 {
-    margin: 0 auto 40px;
-}
-.menu-category h4 {
-    font-family: sniglet, sans-serif;
-    font-size: 1.875em; /* 30/16 */
-    color: #bc0505;
-    margin: 0 0 20px;
-    text-transform: uppercase;
-}
-</pre>
-</div>
-
-<div class="slide">
-<pre>
-.menu-category .menu-section {
-    width: 32%; /*216px/672; */
-    margin: 0 10%;
+.menu-bbq {
+    width: 67%; /* 672px/1000 */
+    border-right: 2px #eaeaea solid;
     float: left;
 }
-.menu-category ul {
-    margin: 0 0 50px;
-}
-</pre>
-</div>
-
-<div class="slide">
-<pre>
-.menu-category li {
-    font-family: bevan, sans-serif;
-    font-size: 1.125em; /* 18/16 */
-    text-align: center;
-    margin: 0 0 15px;
-    color: #000;
-}
-.menu-category li span {
-    display: block;
-    font-size: 0.875em; /* 14/16 */
-    font-family: Arial, sans-serif;
-}
-</pre>
-</div>
-
-
-<style type="text/css">
-        #insti-5 {
-            padding: 0; background-image:url('images/insti-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
-        }
-    </style>
-
-<div id="insti-5" class="slide">
-</div>
-
-<div class="slide">
-    <h4>Fill out the other menu content, using the markup we already have.</h4>
-    <p>You should notice that it's looking pretty good already!</p>
-</div>
-
-<div class="slide">
-    <h4>Styles for other menus</h4>
-    <p class="smaller">the side menu</p>
-<pre>
-.menu-sides {
-    float: left;
-    width: 32.6%; /* 326px/1000 */
-}
-.menu-sides h3 {
-    background: url('sprites/header-sides.gif') no-repeat top left;
-    height: 84px;
-    width: 203px;
-}
-.menu-sides h3 span {
-    display: none;
-}
-</pre>
-</div>
-
-<div class="slide">
-    <h4>Styles for other menus</h4>
-    <p class="smaller">the drinks menu</p>
-<pre>
-.menu-drinks {
-    margin: 0 auto;
-    width: 670px;
-}
-.menu-drinks h3 {
-    background: url('sprites/header-drinks.gif') no-repeat top left;
-    height: 51px;
-    width: 181px;
-}
-.menu-drinks h3 span {
-    display: none;
-}
-.menu-drinks .menu-section {
-    width: 335px;
-    margin: 0;
-}
-</pre>
-</div>
-
-
-<style type="text/css">
-        #insti-6 {
-            padding: 0; background-image:url('images/insti-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
-        }
-    </style>
-
-<div id="insti-6" class="slide">
-</div>
-<style type="text/css">
-        #insti-7 {
-            padding: 0; background-image:url('images/insti-7.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
-        }
-    </style>
-
-<div id="insti-7" class="slide">
-</div>
-
-<div class="slide">
-    <h4>Non-reusable</h4>
-    <p class="smaller">Styles that are specific to the BBQ menu</p>
-<pre>
 .menu-bbq .menu-section {
     margin: 0 9%;
 }
@@ -645,22 +697,22 @@ font-size: 1.625em; /* 26/16 */
 </pre>
 </div>
 
+<style type="text/css">
+    #insti-5 {
+        padding: 0; background-image:url('images/insti-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-5" class="slide">
+</div>
+
 <div class="slide">
-<p class="smaller">Styles that are specific to the Sides menu</p>
+    <h4>Styles for the Sides menu</h4>
 <pre>
-.menu-sides .menu-section {
-    width: 100%;
-    margin: 0;
-}
 .menu-sides {
     float: left;
     width: 32.6%; /* 326px/1000 */
 }
-</pre>
-</div>
-
-<div class="slide">
-<pre>
 .menu-sides h3 {
     background: url('sprites/header-sides.gif') no-repeat top left;
     height: 84px;
@@ -671,6 +723,39 @@ font-size: 1.625em; /* 26/16 */
 }
 </pre>
 </div>
+
+
+<div class="slide">
+    <h4>Styles for the Drinks menu</h4>
+<pre>
+.menu-drinks {
+    margin: 0 auto;
+    width: 670px;
+}
+.menu-drinks h3 {
+    background: url('sprites/header-drinks.gif') no-repeat top left;
+    height: 51px;
+    width: 181px;
+}
+.menu-drinks h3 span {
+    display: none;
+}
+.menu-drinks .menu-section {
+    width: 335px;
+    margin: 0;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-6 {
+        padding: 0; background-image:url('images/insti-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-6" class="slide"></div>
+
+
 
 <div class="slide">
 <h4>The HTML: Footer</h4>
@@ -710,13 +795,13 @@ footer nav {
 <div class="slide">
 <h4>The CSS: Footer</h4>
 <pre>
-footer ul {
-    float: right;
-}
 footer li {
     float: left;
     margin-left: 15px;
     width: auto;
+}
+footer li:first-child {
+    margin: 0;
 }
 footer a ,
 footer a:visited {
