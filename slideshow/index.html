@@ -1,0 +1,3155 @@
+<!DCTYPE html>
+<html>
+<head>
+    <title>Get Schooled</title>
+    
+    <meta charset="utf-8">
+    
+    <!-- <script src="libs/js/prettify.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="libs/css/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + 'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono" />
+    <script src="libs/js/slides.js"></script>
+    
+    <!-- references to custom stuff goes here. -->
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+</head>
+
+<body class="hidden">
+    <div class="menu-container"><ul class="menu no-bullet"></ul></div>
+    
+    <div class="slides layout-regular template-huge">
+        
+        <div class="slide">
+            <h1 class="thin-pink-bottom-border">
+            Huge School
+            </h1>
+            <p class="smaller">Intro to Web Development</p>
+        </div>
+                
+        <div class="slide magenta invert white-border">
+            <h1 class="v-center bigger white">Get started.</h1>
+        </div>
+        
+        <div class="slide">
+            <h4>What we will cover in this course</h4>
+            <ul class="build">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Photoshop <small><strong>slicing!</strong></small></li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        
+        
+        
+
+        
+
+
+        <div class="slide magenta invert white-border">
+            <h1 class="v-center bigger white">HTML.</h1>
+        </div>
+    
+        
+        <div class="slide section">
+	<h4>What is HTML?</h4>
+
+	<ul class="build">
+		<li>HTML stands for Hyper Text Markup Language</li>
+		<li>It is a language that was invented solely for creating websites</li>
+		<li>HTML is built by using a series of <strong>tags</strong></li>
+		<li>HTML can be read by search engines</li>
+		<li>HTML is generally referred to as <strong>markup</strong> by developers</li>
+		<li>Without HTML, there is no World Wide Web as we know it!</li>
+	</ul>
+
+</div>
+        
+        <div class="slide black invert">
+    <h1 class="v-center bigger white">HTML Syntax.</h1>
+</div>
+<!-- syntax -->
+<div class="slide">
+    <h4>HTML</h4>
+    <ul>
+        <li>Tags</li>
+        <li>Attributes</li>
+        <li>Attribute values</li>
+    </ul>
+    <ul class="build no-bullet">
+        <li>
+<pre class="structure">
+&lt;html> &lt;/html></pre>
+        </li>
+        <li>
+<pre><a> Anchor Tag </a> </pre>
+        </li>
+        <li>
+        Adding an attribute:
+<pre class="structure">&lt;a <strong>href="http://www.hugeinc.com"</strong>> Anchor Tag &lt;/a> </pre>
+        </li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h4>Common Attributes</h4>
+    <ul class="build no-bullet">
+        <li>
+<pre class="structure">
+&lt;a <strong>href="http://www.hugeinc.com" target="_blank"</strong>>  &lt;/a></pre>
+        </li>
+        <li>
+<pre class="structure">
+&lt;div <strong>class="menu-sides"</strong>>  &lt;/div>
+</pre>
+        </li>
+        <li>
+<pre class="structure">
+&lt;section <strong>id="menu-drinks" class="menu clearfix"</strong>>  &lt;/section>
+</pre>
+        </li>
+        <li>
+<pre class="structure">
+&lt;img <strong>src="images/coyboy.jpg" alt="Cowboy" width="202" height="201"</strong> />
+</pre>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="slide">
+    <h4>Setting up your environment</h4>
+    <ul class="build">
+        <li>Create a new Folder (on your desktop, in your documents, etc.) that will contain your project. Call it <strong>holdens_web</strong></li>
+        <li>Copy the folder called <strong>css</strong> located on the usb drive into your holdens_web folder</li>
+        <li>Copy the folder called <strong>images</strong> located on your usb drive into your holdens_web folder</li>
+        <li>Sublime Text / Notepad ++</li>
+        <li>File -> New File</li>
+        <li>Save as <strong>index.html</strong></li>
+    </ul>
+</div>
+
+
+<div class="slide">
+    <h4>What every page needs</h4>
+    <ul class="no-bullet">
+        <li>
+<pre class="structure">
+&lt;!doctype html>
+&lt;html>
+    &lt;head>
+        &lt;meta charset="utf-8" />
+        &lt;title>Holden's Hog Tie&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;!-- visible part of the site goes here -->
+    &lt;/body>
+&lt;/html></pre>
+        </li>
+    </ul>
+    <small class="demo magenta">( demo )</small>
+</div>
+
+<!-- doctype -->
+<div class="slide">
+    <h4>Document type declaration</h4>
+    <ul class="build">
+        <li><strong>A Document Type Declaration</strong>, or <strong>DOCTYPE</strong>, is an instruction that tells the browser what kind of document it is rendering.</li>
+        <li>
+        HTML5 Doctype:
+<pre class="structure">
+&lt;!doctype html>
+</pre>
+        </li>
+    </ul>
+</div>
+
+<!-- types of tags -->
+<div class="slide">
+    <h4>Types of tags</h4>
+    <ul class="">
+        <li>Tags can define the general page structure</li>
+        <li>Tags can define sections of a page</li>
+        <li>Tags can define elements on a page</li>
+    </ul>
+</div>
+
+
+
+<div class="slide">
+    <h4>More tags</h4>
+    <ul class="build no-bullet">
+        <li>
+        Working within the <strong>&lt;body> &lt;/body></strong> tags
+<pre>
+<nav>
+    <ul>
+        <li><a href="#">About Holden's</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+    </ul>
+</nav>
+</pre>
+        </li>
+        <li>
+<pre>
+<header>
+    <h1><span>Holden's Hog Tie</span></h1>
+</header>
+</pre>
+        </li>
+    </ul>
+
+<small class="demo magenta">( demo )</small></div>
+
+
+<div class="slide">
+    <h4>Even more tags!</h4>
+    <ul class="no-bullet">
+        <li>
+<pre>
+<footer class="clearfix">
+    <nav>
+        <p>Holden's Hog Tie, 50 E Cesar Chavez St, Austin, TX (500) 867-5309</p>
+        <ul>
+            <li><a href="#">About Holden's</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+        </ul>
+    </nav>
+</footer></pre>
+        </li>
+    </ul>    
+<small class="demo magenta">( demo )</small></div>
+
+<!--
+
+<div class="slide">
+    <h4>Even more tags!</h4>
+    <ul class="build">
+        <li>
+        Headings
+<pre class=""><h2>"No pork butts about it; The Best BBQ in Austin."<span>-Your Mom</span></h2></pre>
+        </li>
+        <li>
+        Self closing tags
+<pre><img src="images/cowboy.jpg" alt="Cowboy" width="202" height="201"></pre>
+        </li>
+    </ul>
+</div>
+
+
+-->
+        
+        <div class="slide black invert section">
+    <h1 class="v-center bigger white">Semantic Markup.</h1>
+</div>
+        <div class="slide">
+            <h4>Semantic Markup</h4>
+
+            <p>
+            Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages rather than merely to define its presentation (look).
+            </p>
+
+<pre>
+<h2>Page Subtitle</h2>
+<h1>Page Title</h1>
+<p>Paragraph of text</p>
+<p>Another paragraph of text</p>
+</pre>
+
+<pre>
+<h1>Page Title</h1>
+<h2>Page Subtitle</h2>
+<p>Paragraph of text</p>
+<p>Another paragraph of text</p>
+</pre>
+
+        </div>        
+        <div class="slide section">
+    <h4>Why is semantic markup important?</h4>
+    <p>Think of your website like you would a newspaper</p>
+    <p>
+    <img src="images/html_semantics_paper.jpg" alt="html_semantics_paper" height="700" style="width: 400px; display: block; margin: 0 auto;" />
+    </p>
+</div>
+
+<div class="slide section">
+    <h4>Common Semantic Tags</h4>
+    <ul>
+        <li>header</li>
+        <li>nav</li>
+        <li>article</li>
+        <li>ul</li>
+        <li>ol</li>
+        <li>a</li>
+        <li>img</li>
+        <li>table</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h4>Adding Semantics to Structural tags</h4>
+    <pre>
+<div class="main-content"></div>
+<div id="advertisment"> </div>
+    </pre>
+</div>        
+
+        
+        
+
+        <div class="slide magenta invert white-border">
+            <h1 class="v-center bigger white">CSS.</h1>
+        </div>
+
+        <div class="slide section">
+    <h4>What is CSS?</h4>
+    <ul class="build">
+        <li>Stands for Cascading Style Sheets</li>
+        <li>Adds formatting/styling to html document</li>
+        <li>Composed of <strong>selectors</strong> and <strong>properties</strong></li>
+    </ul>
+</div>
+
+
+<div class="slide section">
+    <h4>CSS - <small>Basic Syntax</small></h4>
+    <ul class="build no-bullet">
+        <li>
+            CSS is generally written like this:
+            <pre>
+selector {
+    property-name: value;
+    property2: value;
+}</pre>
+        </li>
+        <li>
+            can also be written on a single line:
+            <pre>
+selector {property-name: value;property2: value;}</pre>
+        </li>
+    </ul>
+</div>
+        
+        <div class="slide black section">
+    <h1 class="white">Selectors and Properties</h1>
+</div>
+
+<div class="slide image">
+    <img src="images/html-console.png" width="900" />
+</div>
+
+<div class="slide black invert">
+    <h1 class="white">CSS Selectors</h1>
+</div>
+
+<div class="slide">
+    <h4>Tag</h4>
+    <p>The tag selector is used to apply styles to certain tags</p>
+    <pre>
+h2 {
+    color: red;
+}
+h4 {
+    color: blue;
+}
+    <h2>This will be red</h2>
+    <h4>This will be blue</h4>
+    <h2>This will also be red</h2>
+    <h4>This will also be blue</h4>
+</pre>
+    <p>The above css would make the text of every h2 tag red and every h4 tag blue </p>
+</div>
+
+<div class="slide">
+    <h4>Tag</h4>
+    <pre>
+h2 {
+    color: red;
+}
+h4 {
+    color: blue;
+}
+    </pre>
+    <small class="demo magenta">( demo )</small></div>
+
+<div class="slide">
+    <h4>ID - <strong>#</strong></h4>
+    <p>Any html tag, can be given a unique id attribute. The id selector,<strong>#</strong>, is used to target an element with a specified id</p>
+    <pre>
+#main-content {
+    color: magenta;
+}
+#terms {
+    color: green;
+}
+
+<div id="main-content">This text will be magenta</div>
+<h1 id="terms">This text will be green</h1>
+    </pre>
+    <small class="demo magenta">( demo )</small></div>
+
+<div class="slide">
+    <h4>Class - <strong>.</strong></h4>
+    <p>Any html tag can be given a class attribute with multiple values non-unique values. The class selector,<span style="font-size: 40px;"><strong>.</strong></span>,is used to target all elements with a specified class</p>
+    <pre>
+.sub-header {
+     font-size: 29px;
+}
+.red-text {
+     color: red;
+}
+.big-text {
+    font-size: 40px;
+}
+        <h2 class="sub-header">This text will be big</h2>
+        <p class="red-text">This text will be red</p>
+        <p class="red-text big-text">This text will be big AND red</p>
+    </pre>
+<small class="demo magenta">( demo )</small></div>
+
+<div class="slide">
+    <h4>Attribute - <tag><strong>[attribute]</strong></h4>
+    <p>Selects an html tag that has the attribute</p>
+    <pre>
+p[title] {
+    color: blue
+}
+    <p>This text will be black</p>
+    <p title="brisket">This text will be blue</p>
+</div>
+
+<div class="slide">
+    <h4>Descendant - <strong>Ancestor1 [Ancestor2...] Target</strong>.</h4>
+    <p>Using a descendant is actually using multiple selectors where the last selector, the element to be styled, is
+        a descendant of all the selectors before it.</p>
+    <pre>
+#address p .city {
+    color: silver;
+}
+.pork li {
+    color: salmon;
+}
+    </pre>
+</div>
+
+<div class="slide">
+    <h4>Descendant cont.</h4>
+    <pre>
+#address p .city {
+    color: silver;
+}
+<div id="address" >
+    This text will be black
+    <p>
+        This text will be black
+        <span class="city" >This text will be silver</span>
+            This text will be black
+    </p>
+</div>
+    </pre>
+</div>
+<div class="slide">
+    <h4>Descendant cont.</h4>
+    <pre>
+.pork li {
+    color: salmon;
+}
+<div class="pork">
+    <ul>
+        <li>This text will be salmon</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>This text will be black</li>
+    </ul>
+</div>
+    </pre>
+</div>
+<!-- <div class="slide">
+    <h4>Child - <strong> > </strong></h4>
+    <p>
+
+</div>
+<div class="slide">
+    <h4>Adjacent Sibling - <strong> + </strong></h4>
+
+</div>
+<div class="slide">
+    <h4>General Sibling - <strong> ~ </strong></h4>
+
+</div>
+<div class="slide">
+    <h4>Psuedo Class - <strong>:</strong>Psuedo</h4>css3 except for link,visited hover,active,focus
+    <p>Psuedo classes
+
+</div>
+<div class="slide">
+    <h4>Combining Selectors</h4>
+
+    #ID li.class > li.odd
+
+
+</div> -->
+
+
+
+        <div class="slide section">
+    <h4>Specificity</h4>
+    <p>When more than one CSS rule sets a given style property for an element, the most <em>specific</em> rule will be applied for that propery.</p>
+    <ul class="build no-bullet">
+        <li>The specificity of a given CSS rule is determined by exactly four factors, in decending order of importance:</li>
+        <li>
+            <ul class="no-bullet">
+                <li>1. The element's style attribute</li>
+                <li>2. The presence and quantity of IDs in the selector</li>
+                <li>3. The presence and quantity of classes and pseudo-classes in the selector</li>
+                <li>4. The presence and quantity of elements and pseudo-elements in the selector</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+        
+
+<div class="slide black">
+    <h1 class="white">CSS Properties</h1>
+</div>
+
+<div class="slide">
+  <h4>Including CSS - <small>External/Linked</small></h4>
+  <pre class="structure">
+&lt;head>
+    ...
+    &lt;link rel="stylesheet" type="text/css" href="css/reset.css" />
+    &lt;link rel="stylesheet" type="text/css" href="css/global.css" />
+    ...
+&lt;/head>
+</pre>
+  <ul class="build">
+    <li>Create a new file save it as <strong>global.css</strong>, place it inside the css folder</li>
+    <li>All your css will live in this new file.</li>
+  </ul>
+<small class="demo magenta">( demo )</small></div>
+
+<div class="slide">
+    <h4>CSS properties</h4>
+    <ul class="build no-bullet">
+        <li>Use CSS to modify properties of HTML elements</li>
+        <li>
+<pre class="structure">
+nav {
+  <strong>text-decoration</strong>: underline;
+  <strong>height</strong>: 40px;
+  <strong>margin-top</strong>: 20px;
+  <strong>margin-right</strong>: auto;
+  <strong>margin-bottom</strong>: 70px;
+  <strong>margin-left</strong>: auto;
+}
+</pre>
+        </li>
+    </ul>
+</div>
+
+
+<div class="slide">
+  <h4> CSS - <small>properties</small></h4>
+<pre>
+header {
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 1400px;
+    height: 777px;
+    margin: 0px auto;
+}</pre>
+  <ul class="build no-bullet">
+    <li style="list-style-type:none !important;"> 
+<pre class="build">
+header {
+    background: url('../images/header-bg.jpg') no-repeat top left;
+    width: 1400px;
+    height: 777px;
+}</pre>
+    </li>
+  </ul>
+<small class="demo magenta">( demo )</small></div>
+
+
+
+
+
+
+<div class="slide">
+<pre>
+footer {
+    color: #d56161;
+    background: #bc0505;
+    padding: 15px 0;
+    font-size: 14px;
+}
+</pre>
+</div>        
+        <div class="slide section">
+    <h4>CSS - float</h4>
+    <ul>
+        <li>The <strong>float</strong> property is used to float an element to the left or right.</li>
+        <li>Subsequent elements wrap around the floating element.</li>
+    </ul>
+    <ul class="build">
+        <li>open <strong>float_lab.html</strong></li>
+    </ul>
+</div>
+
+
+
+<div class="slide">
+    <h4>float</h4>
+    <ul class="build">
+        <li>How to get block level elements to sit next to each other?</li>
+        <li>Float them!</li>
+    </ul>
+
+</div>        
+        <div class="slide">
+    <h4>Fonts</h4>
+    <ul class="build no-bullet">
+        <li>
+            <strong>Google Web Fonts</strong> allows you to embed fonts for free!
+        </li>
+        <li>
+            <pre class="structure">
+&lt;html>
+    &lt;head>
+    &lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bevan">
+    &lt;/head>
+&lt;/html>
+            </pre>
+        </li>
+        <li>
+            <pre class="structure">        
+body {
+    font-family: 'Bevan', arial, sans-serif;
+    font-size: 48px;
+}
+            </pre>
+        </li>
+    </ul>
+</div>
+        <div class="slide section">
+    <h4>Inheritance</h4>
+    <p>Each element in an HTML document is part of a tree, and every element except the initial <html> element has a parent element that encloses it. Whatever styles are applied to that parent element can be applied to the elements enclosed in it if the properties are inherited</p>
+    <ul class="build no-bullet">
+        <li>
+            <pre class="prettyprint"><h6>This is a <em>Big</em> Headline</h6></pre>
+        </li>
+        <li>The EM element is a child of the H1 element, and any styles on the H1 that are inherited will be passed on to the EM text as well. For example: h6 { color: red; }</li>
+    </ul>
+</div>
+        <div class="slide section">
+    <h4>Cascading</h4>
+    <p>The CSS cascade assigns a weight to each style rule. When several rules apply, the one with the greatest weight takes precedence.</p>
+    <ul class="build no-bullet">
+        <li>
+            <ul>
+                <li>1. Browser default</li>
+                <li>2. External style sheet</li>
+                <li>3. Internal style sheet (in the head section)</li>
+                <li>4. Inline style (inside an HTML element)</li>
+            </ul>
+        </li>
+        <li>So, an inline style (inside an HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or in a browser (a default value).</li>
+    </ul>
+</div>
+        <style type="text/css">
+    #box-model{
+        background: url('images/css-box-model.gif') #FFF  center 110px no-repeat;
+    }
+    .bottom {
+        margin: 400px 0 0;
+    }
+</style>
+<div id="box-model" class="slide section">
+    <h4>Box Model</h4>
+    <p class="bottom">All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+</div>
+<div class="slide">
+    <ul>
+        <li>The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.</li>
+        <li>
+            <pre>
+Margin - Clears an area around the border.
+Border - A border that goes around the padding and content.
+Padding - Clears an area around the content.
+Content - The content of the box, where text and images appear.
+</pre>
+        </li>
+        <li>*Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add the padding, borders and margins.</li>
+    </ul>
+</div>
+        <div class="slide black invert section">
+    <h1 class="v-center bigger white">Media Queries.</h1>
+</div>
+
+<div class="slide">
+    <h4>Media Queries.</h4>
+    <p>Consists of a media type (such as screen, print, device) and various css rules to be applied.</p>
+    <p>Allows a developer to target either devices or size-based breakpoints (or both) to customize a website's layout and appearance.</p>
+    <p><strong>Media queries are one very important tool for creating a responsive design.</strong></p>
+</div>
+
+<div class="slide">
+    <h4>Targeting a device.</h4>
+    <ul>
+        <li><strong>tv</strong>: for fancy tv owners</li>
+        <li><strong>print</strong>: for print stylesheets</li>
+        <li><strong>screen</strong>: for almost everything else!</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h4>Targeting a feature.</h4>
+    <ul>
+        <li><strong>min-color</strong>: if you require a certain number of colors for a style</li>
+        <li><strong>max-device-width</strong>: to target a certain device size (note: only for devices!)</li>
+        <li><strong>max-width</strong>: for all devices or browser needs</li>
+    </ul>
+</div>
+
+
+<div class="slide">
+    <h4>Why target a feature or size?</h4>
+    <p>Retina display.  You can target based on <strong>-webkit-min-device-pixel-ratio: 2</strong> to serve up higher quality images.</p>
+    <p>Any small device.  Target based on a max or min size to provide a more natural layout on small devices ie: <strong>max-width: 480px</strong>.</p>
+</div>
+
+<div class="slide">
+    <h4>Example.</h4>
+<pre>
+@media screen and (max-width: 480px) {
+    .menu-bbq {
+        width: 100%;
+        float: left;
+    }
+}
+</pre>
+    <p>Targets all screens (including browser) that are smaller than 480px.</p>
+    <p>Useful for phones or smaller tablets.</p>
+    <p><strong>Normal css goes into any media query.  Anything you can use normally can be put in a media query!</strong></p>
+</div>
+
+<div class="slide">
+    <h4>Targeting strategies.</h4>
+    <p class="smaller">If you have a lot of wide content, it may be smarter to target sizes based on the content than the sizes of common devices.</p>
+    <p class="smaller">For example, our header image is 874px wide.  While this isn't a common breakpoint, it makes sense that for any screen smaller than this, we should hide the image.</p>
+</div>
+
+<div class="slide">
+    <h4>Example.</h4>
+    <pre>
+@media screen and (max-width: 874px) {
+    /* Update global areas for smaller screens */
+    h1 {
+        background: none;
+    }
+
+    header {
+        background: none;
+        height: 0px;
+    }
+}
+</pre>
+    <p>In this case, we are just hiding the image since we have another logo.  You could also stretch the image to scale, or serve up a smaller background image specifically for smaller devices.</p>
+</div>
+
+<div class="slide">
+    <h4>Responsive Design and Responsive Web.</h4>
+
+    <p>
+        Responsive is the way the web is going at a rapid rate. Tablets, phones, desktops, gaming consoles, etc all view the same websites at different
+        resolutions and screensizes. How do we ensure that our websites look good on all of these devices?
+    </p>
+
+    <p>Check <a href="http://mediaqueri.es">http://mediaqueri.es</a> for great examples of responsive sites.</p>
+
+</div>
+    
+        
+
+        <div class="slide magenta invert white-border">
+            <h1 class="v-center bigger white">Slicing.</h1>
+        </div>
+        
+        		<div class="slide section">
+			<h4>What is slicing?</h4>
+
+			<ul class="build">
+				<li>Not everything can be styled purely with CSS.</li>
+				<li><strong>Cutting assets</strong>, or slicing, is how we pull those elements from our PSD...</li>
+				<li>...and prepare them for our website.</li>
+				<li>A majority of assets are images, icons, or static text.</li>
+			</ul>
+
+		</div>        
+        		<style type="text/css">
+                #bleed {
+                    padding: 0; background-image:url('images/assets.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="bleed" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #bleed2 {
+                    padding: 0; background-image:url('images/assets.jpg'); background-size:cover; background-position:50% 25%;
+                }
+            </style>
+
+		<div id="bleed2" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #bleed3 {
+                    padding: 0; background-image:url('images/assets.jpg'); background-size:cover; background-position:50% 50%;
+                }
+            </style>
+
+		<div id="bleed3" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #bleed4 {
+                    padding: 0; background-image:url('images/assets.jpg'); background-size:cover; background-position:50% 75%;
+                }
+            </style>
+
+		<div id="bleed4" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #bleed5 {
+                    padding: 0; background-image:url('images/assets.jpg'); background-size:cover; background-position:50% 100%;
+                }
+            </style>
+
+		<div id="bleed5" class="slide">
+
+		</div>        
+        		<div class="slide section">
+			<h4>Slicing How-To:</h4>
+
+			<ol class="build">
+				<li>Select element or group of elements</li>
+				<li>Right click on element in layers palatte</li>
+				<li>Select "Duplicate Layers..."</li>
+				<li>Destination > Document > New > OK</li>
+				<li> Image > Trim... </li>
+				<li>Based On > Transparent Pixels > &#9745;Top, &#9745;Left, &#9745;Bottom, &#9745;Right > OK</li>
+				<li>File > Save for Web...</li>
+			</ol>
+
+		</div>        
+        
+        		<style type="text/css">
+                #step1 {
+                    padding: 0; background-image:url('images/step1.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="step1" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #step2 {
+                    padding: 0; background-image:url('images/step2.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="step2" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #step3 {
+                    padding: 0; background-image:url('images/step3.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="step3" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #step4 {
+                    padding: 0; background-image:url('images/step4.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="step4" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #step5 {
+                    padding: 0; background-image:url('images/step5.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="step5" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                table li {
+                    font-size:.5em;}
+
+                td {width: 25%;}
+            </style>
+
+		<div class="slide section">
+			<h4>Image File Types</h4>
+
+			<table border="0" bordercolor="#FFFFFF" style="background-color:#FFFFFF" width="100%" cellpadding="3" cellspacing="3">
+				<tr>
+					<td><strong>.GIF</strong></td>
+					<td><strong>.JPG or .JPEG </strong></td>
+					<td><strong>.PNG 8</strong></td>
+					<td><strong>.PNG 24</strong></td>
+				</tr>
+				<tr>
+					<td><ul>
+							<li><strong>Good for</strong> logos or images with flat blocks of color</li>
+							<li>256 colors max</li>
+							<li>Lossless compression</li>
+							<li>Aliased transparency</li>
+							<li>Simple Animation</li>
+						</ul>
+					</td>
+
+					<td><ul>
+							<li><strong>Good for</strong> photographs</li>
+							<li>Millions of colors</li>
+							<li>No transparency</li>
+						</ul></td>
+
+					<td><ul>
+							<li><strong>Good for</strong> logos or images with flat blocks of color</li>
+							<li>256 colors max</li>
+							<li>Lossless compression</li>
+							<li>Aliased transparency</li>
+							<li>No Animation</li>
+							<li>Some older browsers don't support PNG</li>						</ul></td>
+
+					<td><ul>
+							<li><strong>Good for</strong> images using drop shadows or glows, and/or require transparency</li>
+							<li>Millions of colors</li>
+							<li>Best of both worlds</li>
+							<li>Lossless compression</li>
+							<li>Bigger file size</li>
+							<li>Anti-aliased transparency</li>
+							<li>Some older browsers don't support PNG</li>						</ul></td>
+				</tr>
+			</table>
+
+		</div>        
+        		<style type="text/css">
+                #image-types {
+                    padding: 0; background-image:url('images/image-types.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="image-types" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #image-types2 {
+                    padding: 0; background-image:url('images/image-types.jpg'); background-size:cover; background-position:50% 25%;
+                }
+            </style>
+
+		<div id="image-types2" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #image-types3 {
+                    padding: 0; background-image:url('images/image-types.jpg'); background-size:cover; background-position:50% 50%;
+                }
+            </style>
+
+		<div id="image-types3" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #image-types4 {
+                    padding: 0; background-image:url('images/image-types.jpg'); background-size:cover; background-position:50% 75%;
+                }
+            </style>
+
+		<div id="image-types4" class="slide">
+
+		</div>        
+        		<style type="text/css">
+                #image-types5 {
+                    padding: 0; background-image:url('images/image-types.jpg'); background-size:cover; background-position:50% 100%;
+                }
+            </style>
+
+		<div id="image-types5" class="slide">
+
+		</div>        
+        		<div class="slide section">
+			<h4>What about file size and page load?</h4>
+
+			<ul class="build">
+				<li>The average internet connection speed in the US in 2012 was about 6 mbps.</li>
+				<li>But the average mobile internet connection speed in the US is still around 1.5 to 2 mbps.</li>
+				<li>Plus, slow page load affects Google ranking.</li>
+				<li><strong>Optimizing images is a good way to reduce page load times.</strong></li>
+				<li>And photoshop makes it really easy!</li>
+			</ul>
+
+			<BR>
+			<small><strong>Pro Tip:</strong> Google search 'Google PageSpeed' for a quick page load evaluation and suggestions on how to improve your site's load time. </small>
+
+		</div>
+
+
+
+
+
+        
+        		<div class="slide section">
+			<h4>How can Save For Web... help with image optimization?</h4>
+
+			<ul class="build">
+				<li>Select file type</li>
+				<li>See file size and page load time on different internet speeds</li>
+				<li>Compare image compression</li>
+				<li>Resize image</li>
+			</ul>
+
+		</div>
+
+
+
+
+
+        
+        		<style type="text/css">
+                #saveforweb {
+                    padding: 0; background-image:url('images/save-for-web.jpg'); background-size:cover;
+                }
+            </style>
+
+		<div id="saveforweb" class="slide">
+
+		</div>        
+        		<div class="slide section">
+			<h4>Saving to the /images folder...</h4>
+
+			<ol class="build">
+				<li>In the 'Save for Web...' window click 'Save...'</li>
+				<li>Navigate to your project folder</li>
+				<li>Click 'New Folder' and name the folder <i>images</i></li>
+				<li><strong>Save all the image files for your project here!</strong></li>
+			</ol>
+
+
+			<h4>& a few notes on file naming conventions...</h4>
+
+			<ol class="build">
+				<li><strong>No spaces!</strong> Use-dashes-instead.</li>
+				<li><strong>No symbols!</strong> Letters, numbers, dashes, & underscores&nbsp;only.
+				<li>Make file names descriptive, using keyword-rich words.</li>
+			</ol>
+
+		</div>
+
+
+
+
+
+
+
+        <div class="slide black invert section">
+    <h1 class="v-center white">Building the site out.</h1>
+</div>
+
+<div class="slide">
+<h4>The HTML: Basic Structure of the site</h4>
+<ol class="build">
+    <li>Check to make sure you have an HTML tag</li>
+    <li>Check to make sure you have an head tag</li>
+    <li>Check to make sure you have an body tag</li>
+</ol>
+</div>
+<div class="slide">
+<h4>The HTML: Adding the meta tags.</h4>
+<p class="smaller">inside the head tag, add the following <strong>before</strong> the title tag</p>
+<pre>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</pre>
+</div>
+
+<div class="slide">
+<h4>The HTML: Adding stylesheets to the page</h4>
+<p class="smaller">inside the head tag, add the following <strong>after</strong> the title tag</p>
+<pre>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/global.css" />
+<link href='http://fonts.googleapis.com/css?family=Sniglet:800|Bevan' rel='stylesheet' type='text/css'>
+</pre>
+</div>
+
+<div class="slide">
+<h4>The HTML: Page Container</h4>
+<p class="smaller">Everything on the page will be included inside .page</p>
+<pre>
+<div class="page">
+
+    <!-- menu here -->
+
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<h4>The HTML: Navigation</h4>
+<p class="smaller">we are now adding the menu inside .page</p>
+<pre>
+<nav class="main-nav">
+    <ul>
+        <li><a href="#">About Holden's</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+    </ul>
+</nav>
+</pre>
+</div>
+
+
+
+<div class="slide">
+<h4>The HTML: Adding the page title</h4>
+<p class="smaller">add this after .main-nav.This is the title of the page.</p>
+<pre>
+<header>
+    <h1><span>Holden's Hog Tie</span></h1>
+</header>
+</pre>
+</div>
+
+<div class="slide">
+<h4>The HTML: The top content area.</h4>
+<p class="smaller">add this after the page title (Header tag)</p>
+<pre>
+<section id="content" class="clearfix">
+    <h2>
+        <img src="css/sprites/logo.png" alt="Holden Hog Tie" />
+        <strong>"No pork butts about it; The Best BBQ in Austin."<span>-Your Mom</span></strong>
+    </h2>
+    <div class="user-text">
+        <p>Lorem ipsum ...</p>
+        
+        <p>ipsum dolor ...</p>
+    </div>
+    <img class="cowboy-icon" src="images/cowboy.jpg" alt="Cowboy" width="202" height="201" />
+</section>
+</pre>
+</div>
+
+
+<style type="text/css">
+    #screen-menu-y-header {
+        padding: 0; background-image:url('images/insti-0.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+
+<div id="screen-menu-y-header" class="slide"></div>
+
+<div class="slide">
+<h4>The CSS: Global styles.</h4>
+<pre>
+body {
+    background: url('../images/header-bg.jpg') no-repeat center 175px;
+    border-top: 5px #bc0505 solid;
+    color: #666666;
+    font-size: 16px;
+}
+.page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-1 {
+            padding: 0; background-image:url('images/insti-1.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+</style>
+
+<div id="insti-1" class="slide">
+</div>
+
+<div class="slide">
+    <p class="smaller">Now we are adding some baseline styles that will not immediately affect the look of the page</p>
+    <p class="smaller">after the <strong>.page</strong> block, add:</p>
+
+<pre>
+nav,
+header,
+h1,
+section,
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+}
+.wrapper {
+    height:  100%;
+}    
+</pre>
+</div>
+
+<div class="slide">
+    <pre>
+h1 {
+    margin: 20px auto 0 auto;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    color: #1a1a1a;
+}
+    </pre>
+</div>
+
+
+<div class="slide">
+<h4>The CSS: Navigation</h4>
+<pre>
+.main-nav {
+    font-family: bevan, sans-serif;
+    margin: 50px auto 0;
+}
+nav ul {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+nav li {
+    font-size: 0.75em;
+    display: inline;
+    margin: 0 1%;
+}
+nav a {
+    color: #000;
+    font-size: 1.5em; /* 18/16 */
+    text-transform: uppercase;
+}
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-2 {
+            padding: 0; background-image:url('images/insti-2.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-2" class="slide">
+</div>
+
+<div class="slide">
+<h4>The CSS: Page Title (H1)</h4>
+<pre>
+header {
+    height: 815px;
+}
+
+h1 {
+    background: url('sprites/header.png') no-repeat top center;
+    width: 100%;
+    height: 178px;
+}
+
+h1 span {
+    display: none;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-3 {
+        padding: 0; background-image:url('images/insti-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-3" class="slide">
+</div>
+
+<div class="slide">
+<h4>The CSS: Top content area (#content)</h4>
+<p class="smaller">some baseline styles for the #content container.</p>
+<pre>
+#content {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+</pre>
+</div>
+
+<div class="slide">
+<h4>The logo and the tagline</h4>
+<pre>
+#content h2 {
+    position: relative;
+    top: -46px;
+    overflow: hidden;
+    font-family: bevan, sans-serif;
+    font-size: 1.625em; /* 26/16 */
+    color: #333;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#content h2 img {
+    float: left;
+    width: 21.1%; /* 211/1000px */
+}
+#content h2 strong {
+    margin-top: 10%;
+    float: right;
+    width: 75%;
+}
+#content h2 span {
+    display: block;
+    text-align: right;
+    font-size: 0.69em; /* 18/26 */
+    color: #d2d2d2;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-3-5 {
+        padding: 0; background-image:url('images/insti-3-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-3-5" class="slide">
+</div>
+
+<div class="slide">
+<h4>Calculating em and percentages</h4>
+<p class="smaller">target = 26 from PSD</p>
+<p class="smaller">root = 16 from Body</p>
+<p class="smaller">em = t/r</p>
+<pre>
+body {
+   ...
+    font-size: 16px;
+}
+...
+...
+font-size: 1.625em; /* 26/16 */
+</pre>
+</div>
+
+
+
+<style>
+    #percentage {
+       padding: 0; background-image:url('images/percentage.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+<div id="percentage" class="slide">
+</div>
+
+<div class="slide">
+<h4>The Cowboy</h4>
+<pre>
+#content .cowboy-icon {
+    margin-left: 30px;
+    float: right;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.user-text {
+    float: left;
+    width: 67%;
+    margin-bottom: 2.5em; /* 40/16 */
+    padding-left: 50px;
+    line-height: 1.25em; /* 20/16 */
+    font-size: 0.8125em; /* 13/16 */
+    
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+    
+    -moz-column-gap: 30px; /* Firefox */
+    -webkit-column-gap: 30px; /* Safari and Chrome */
+    column-gap: 30px;
+}
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-4 {
+            padding: 0; background-image:url('images/insti-4.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-4" class="slide">
+</div>
+
+
+<div class="slide">
+<h4>The HTML: Menus</h4>
+<p class="smaller">Here are the containers for the different menus.</p>
+<p class="smaller">Notice the hierarchy. <strong>.menu-category</strong> is the parent of the differnet menu types (ex. menu-bbq)</p>
+<p class="smaller">After this, there should be no change on your page because we have yet to add any content.</p>
+<pre>
+<section id="menu-food" class="menu-category clearfix">
+    <div class="menu-bbq"></div>
+    <div class="menu-sides"></div>
+</section>
+<section id="menu-drinks" class="menu-category clearfix">
+    <div class="menu-drinks"></div>
+</section>
+</pre>
+</div>
+
+<div class="slide">
+    <h4>Menu BBQ. – Menu title</h4>
+    <p class="smaller">This is the menu title and it goes in <strong>.menu-bbq</strong> container.</p>
+<pre>
+<h3><span>BBQ</span></h3>
+
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-4-1 {
+            padding: 0; background-image:url('images/insti-4-1.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-4-1" class="slide">
+</div>
+
+<div class="slide">
+    <h4>The Menus.</h4>
+    <p class="smaller">Next we are going to add some beef dishes to the menu. Notice <strong>.menu-section</strong> is the parent container of all the beef dishes.</p>
+    <p class="smaller">This goes under the H3.</p>
+<pre>
+<div class="menu-section">
+    <h4>Beef</h4>
+    <ul>
+        <li>Moist Brisket</li>
+        <li>Beef Shoulder</li>
+        <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
+        <li>Boneless Prime Rib</li>
+        <li>1/2 lb Burger</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">Your entire markup for the BBQ menu with Beef dishes shoulw look like this.</p>
+<pre>
+<div class="menu-bbq">
+    <h3><span>BBQ</span></h3>
+    <div class="menu-section">
+            <h4>Beef</h4>
+            <ul>
+                <li>Moist Brisket</li>
+                <li>Beef Shoulder</li>
+                <li>Beef Ribs<span>Available in 1/2 and Full Rack</span></li>
+                <li>Boneless Prime Rib</li>
+                <li>1/2 lb Burger</li>
+            </ul>
+    </div>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-2 {
+        padding: 0; background-image:url('images/insti-4-2.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-2" class="slide">
+</div>
+
+<div class="slide">
+<p class="smaller">Now we can continue to add the Chicken, Sausage and Port sections.</p>
+<p class="smaller">For example, this is the code you need for the chicken section. Notice it has the same hierachy as the beef section</p>
+<p class="smaller">Add this after the <strong>beef .menu-section</strong></p>
+<pre>
+<div class="menu-section">
+    <h4>Chicken</h4>
+    <ul>
+        <li>Market Chicken<span>Available in 1/2 and Full Roaster</span></li>
+        <li>Beer Can Bird</li>
+        <li>Wings</li>
+        <li>Drumsticks</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-3 {
+        padding: 0; background-image:url('images/insti-4-3.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-3" class="slide">
+</div>
+
+
+<div class="slide">
+<p class="smaller">We can create the Sides menu by following the same hierachy we have established for the BBQ section. First, let's create the menu title.</p>
+<p class="smaller">Type the following inside the <strong>.menu-sides</strong> container.</p>
+<pre>
+<h3><span>Sides</span></h3>
+</pre>
+
+<p class="smaller">Directly after the above code, add the menu section:</p>
+<pre>
+<div class="menu-section">
+    <h4>Potatoes</h4>
+    <ul>
+        <li>Baked</li>
+        <li>Mashed</li>
+        <li>French Fried</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">Also add the Veggie section underneath the Potato section:</p>
+<pre>
+<div class="menu-section">
+    <h4>Veggies</h4>  
+    <ul>
+        <li>Cole Slaw</li>
+        <li>Drunk Beans</li>
+        <li>Collard Greens</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-4 {
+        padding: 0; background-image:url('images/insti-4-4.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-4" class="slide">
+</div>
+
+<div class="slide">
+<p class="smaller">Lastly, we add out drink menu following the same hierachy. First we add the title of the menu in the <strong>.menu-drinks</strong> container</p>
+<pre>
+<h3><span>Drinks</span></h3>
+</pre>
+<p class="smaller">and then the Soft Drinks section.</p>
+<pre>
+<div class="menu-section">
+    <h4>Soft Drinks</h4>
+    <ul>
+        <li>Lemonade</li>
+        <li>Pop</li>
+        <li>Iced Tea</li>
+        <li>Sweet Tea</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<div class="slide">
+<p class="smaller">after the Soft Drink .menu-section, we add the Beer section &mdash; out last drink .menu-section</p>
+<pre>
+<div class="menu-section">
+    <h4>Beer</h4>
+    <ul>
+        <li>Budweiser</li>
+        <li>Bud Light</li>
+        <li>Live Oak Brew</li>
+        <li>Brooklyn Lager</li>
+    </ul>
+</div>
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-5 {
+        padding: 0; background-image:url('images/insti-4-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-5" class="slide">
+</div>
+
+<!-- <div class="slide">
+<h4>Styling the menus with CSS</h4>
+<p class="smaller">Let's start by styling some common containers in the menus</p>
+<pre>
+#menu-food {
+    margin: 50px auto 30px;
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+    padding: 20px 0 0;
+}
+</pre>
+</div> -->
+
+<div class="slide">
+<h4>Styling the menus with CSS</h4>
+<p class="smaller">Let's start by styling some common containers in the menus, for example, the <strong>.menu-category</strong> container</p>
+<pre>
+.menu-category {
+    text-align: center;
+}
+.menu-category h3 {
+    margin: 0 auto 40px;
+}
+.menu-category h4 {
+    font-family: sniglet, sans-serif;
+    font-size: 1.875em; /* 30/16 */
+    color: #bc0505;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+</pre>
+</div>
+
+<div class="slide">
+<h4>.menu-category (continued)</h4>
+<pre>
+.menu-category .menu-section {
+    width: 32%; /*216px/672; */
+    margin: 0 10%;
+    float: left;
+}
+.menu-category ul {
+    margin: 0 0 50px;
+}
+
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.menu-category li {
+    font-family: bevan, sans-serif;
+    font-size: 1.125em; /* 18/16 */
+    text-align: center;
+    margin: 0 0 15px;
+    color: #000;
+}
+.menu-category li span {
+    display: block;
+    font-size: 0.875em; /* 14/16 */
+    font-family: Arial, sans-serif;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-6 {
+        padding: 0; background-image:url('images/insti-4-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-6" class="slide">
+</div>
+
+<!-- <pre>
+#menu-food {
+    margin: 50px auto 30px;
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+    padding: 20px 0 0;
+}
+</pre> -->
+
+
+<div class="slide">
+<h4>Let's work on the food menus</h4>
+<pre>
+#menu-food {
+    margin: 50px auto 30px;
+    color: #000;
+    border-bottom: 2px #eaeaea solid;
+    padding: 20px 0 0;
+}
+.menu-bbq {
+    width: 67%; /* 672px; */
+    border-right: 2px #eaeaea solid;
+    float: left;
+}
+.menu-sides {
+    float: left;
+    width: 32.6%; /* 326px */
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-4-7 {
+        padding: 0; background-image:url('images/insti-4-7.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-4-7" class="slide">
+</div>
+
+<div class="slide">
+    <h4>Styles for the BBQ menu</h4>
+    <p class="smaller">Now that the general layout is defined, we can go in and style the details for each menu.</p>
+<pre>
+.menu-bbq {
+    width: 67%; /* 672px/1000 */
+    border-right: 2px #eaeaea solid;
+    float: left;
+}
+.menu-bbq .menu-section {
+    margin: 0 9%;
+}
+.menu-bbq ul:nth-child(2) {
+    height: 250px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.menu-bbq h3 {
+    background: url('sprites/header-bbq.gif') no-repeat top left;
+    height: 84px;
+    width: 190px;
+}
+.menu-bbq h3 span {
+    display: none;
+}
+.menu-bbq ul:nth-child(2) {
+    height: 250px;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-5 {
+        padding: 0; background-image:url('images/insti-5.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-5" class="slide">
+</div>
+
+<div class="slide">
+    <h4>Styles for the Sides menu</h4>
+<pre>
+.menu-sides {
+    float: left;
+    width: 32.6%; /* 326px/1000 */
+}
+.menu-sides h3 {
+    background: url('sprites/header-sides.gif') no-repeat top left;
+    height: 84px;
+    width: 203px;
+}
+.menu-sides h3 span {
+    display: none;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+    <h4>Styles for the Drinks menu</h4>
+<pre>
+.menu-drinks {
+    margin: 0 auto;
+    width: 670px;
+}
+.menu-drinks h3 {
+    background: url('sprites/header-drinks.gif') no-repeat top left;
+    height: 51px;
+    width: 181px;
+}
+.menu-drinks h3 span {
+    display: none;
+}
+.menu-drinks .menu-section {
+    width: 335px;
+    margin: 0;
+}
+</pre>
+</div>
+
+<style type="text/css">
+    #insti-6 {
+        padding: 0; background-image:url('images/insti-6.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+    }
+</style>
+
+<div id="insti-6" class="slide"></div>
+
+
+
+<div class="slide">
+<h4>The HTML: Footer</h4>
+<pre>
+<footer class="clearfix">
+    <nav>
+        <p>Holden's Hog Tie, 50 E Cesar Chavez St, Austin, TX &dot; (500) 867-5309</p>
+        <ul>
+            <li><a href="#">About Holden's</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+        </ul>
+    </nav>
+</footer>
+</pre>
+</div>
+
+<div class="slide">
+<h4>The CSS: Footer</h4>
+<pre>
+footer {
+    color: #d56161;
+    background: #bc0505;
+    padding: 15px;
+    font-size: 0.875em; /* 14/16 */
+}
+footer p {
+    float: left;
+}
+footer nav {
+    font-family: arial, sans-serif;
+}
+</pre>
+</div>
+
+<div class="slide">
+<h4>The CSS: Footer</h4>
+<pre>
+footer li {
+    float: left;
+    margin-left: 15px;
+    width: auto;
+}
+footer li:first-child {
+    margin: 0;
+}
+footer a ,
+footer a:visited {
+    font-size: 0.875em; /* 14/16 */
+    color: #d56161;
+}
+</pre>
+</div>
+
+<style type="text/css">
+        #insti-8 {
+            padding: 0; background-image:url('images/insti-8.jpg'); background-size:100%; background-position: 50% 25%; background-repeat: no-repeat;
+        }
+    </style>
+
+<div id="insti-8" class="slide">
+</div>
+        <div class="slide black invert section">
+	<h1 class="v-center white">Responsive!</h1>
+</div>
+
+<div class="slide">
+	<h4>Before we start.</h4>
+	<p>As you drag the browser and make it smaller, you will see that the layout will start to break.</p>
+</div>
+
+<style>
+	#broken-medium-bp {
+		background: transparent url('images/broken-medium-breakpoint.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="broken-medium-bp" class="slide">
+</div>
+
+<style>
+	#broken-medium-bp2 {
+		background: transparent url('images/broken-medium-breakpoint.jpg') center -802px no-repeat;
+	}
+</style>
+<div id="broken-medium-bp2" class="slide">
+</div>
+
+<div class="slide">
+	<h4>Create a new stylesheet</h4>
+	<p>Name it <strong>responsive.css</strong> and put it inside the <strong>css folder</strong></p>
+</div>
+
+<div class="slide">
+	<h4>Reference the new stylesheet in the code</h4>
+	<p>In the <strong>head tag</strong> in <storng>index.html</srong>, add the following.</p>
+<pre>
+<link rel="stylesheet" href="css/responsive.css" />
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Defining your first breakpoint</h4>
+	<p class="smaller">In the new <strong>responsive.css</strong>. All styles inside this block will apply when the browser is between 0 to 999px</p></p>
+<pre>
+@media all and (max-width: 999px) {
+
+}
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Styles that optimize the layout</h4>
+	<p class="smaller">put this inside the breakpoint you just defined.</p>
+<pre>
+body {
+	width: 100%;
+}
+#content {
+	padding: 0 20px;
+}
+h1 {
+	background-size: 90%;
+	background-position: center center;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.user-text {
+	width: 50%;
+	padding: 0;
+	   -webkit-column-count: 1;
+	   -moz-column-count: 1;
+	   column-count: 1;
+}
+.user-text p {
+	padding-top: 15px;
+}
+.user-text p:first-child {
+	padding-top: 0;
+}
+</pre>
+</div>
+
+<style>
+	#com-1 {
+		background: transparent url('images/rwd-com-1.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-1" class="slide">
+</div>
+
+<style>
+	#com-2 {
+		background: transparent url('images/rwd-com-2.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-2" class="slide">
+</div>
+
+
+<style>
+	#broken-small-bp {
+		background: transparent url('images/broken-small-breakpoint.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="broken-small-bp" class="slide">
+</div>
+
+<div class="slide">
+	<h4>Let's define another breakpoint</h4>
+	<p class="smaller">All styles inside this block will apply when the browser is between 0 to 660px</p>
+	<p class="smaller">Add this inside <strong>responsive.css</strong>, after the 999px breakpoint</p>
+<pre>
+@media all and (max-width: 660px) {
+
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Revisiting our navigation HTML</h4>
+	<p class="smaller">Add the mobile nav button to the menu</p>
+<pre>
+ <a href="#" id="mobile-hamburger">
+    <span class="icon-bg">
+        <span class="icon-bar"></span>
+    </span>
+</a>
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Our new nav markup</h4>
+<pre>
+<nav class="main-nav">
+    <ul>
+        <li><a href="#">About Holden's</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+    </ul>
+    <a href="#" id="mobile-hamburger">
+        <span class="icon-bg">
+            <span class="icon-bar"></span>
+        </span>
+    </a>
+</nav>
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Revisit our navigation CSS</h4>
+	<p class="smaller">Find your CSS for the navigaion in <strong>global.css</strong>, add the CSS for the mobile button in <strong style="color: green;">global.css</strong>, not <strong style="color: red;">responsive.css</strong></a>
+	<p class="smaller">Add this after the <strong>nav a</strong> block and before the <strong>header</strong> block</p>
+<pre>
+#mobile-hamburger {
+	display: none;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Put these styles into the 660px breakpoint</h4>
+<pre>
+body {
+	border: 0;
+	background-size: 550px;
+	background-position: center top;
+}
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Our new navigation styles for the 660px breakpoint</h4>
+	<p class="smaller"></p>
+<pre>
+.main-nav {
+	background-color: #f3f3f3;
+	border-bottom: 5px #bc0505 solid;
+	margin: 0;
+	padding: 0 20px;
+	position: absolute;
+	width: 100%;
+}
+.main-nav ul {
+	padding: 15px 0;
+}
+.main-nav li {
+	float: none;
+	margin-top: 20px;
+	text-align: left;
+	width: auto;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.main-nav li:first-child {
+	margin-top: 0;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Styles for the hamburger button</h4>
+<pre>
+#mobile-hamburger {
+	background-color: #bc0505;
+	display: block;
+	height: 20px;
+	padding: 10px;
+	position: absolute;
+	right: 20px;
+	width: 20px;
+}
+#mobile-hamburger span {
+	display: block;
+	position: relative;
+	width: auto;
+	top: 5px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#mobile-hamburger .icon-bg {
+	background-color: #fff;
+	height: 15px;
+}
+#mobile-hamburger .icon-bg .icon-bar {
+	background-color: transparent;
+	border-top: 5px solid #bc0505;
+	height: 5px;
+	position: relative;
+	top: 5px;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+	<h4>Adding new behavior for the navigation </h4>
+<pre>
+nav ul {
+	display: none;
+}
+nav.expanded ul {
+	display: block;
+}
+nav li a {
+	float: none;
+	font-size: 0.9375em; /* 15/16 */
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+header {
+	height: 306px;
+}
+h1 {
+	background-size: 80%;
+	background-position: center 20px;
+	height: 295px;
+	margin: 0;
+	width: 100%;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#content {
+	padding: 0 20px;
+}
+#content h2 {
+	background: none;
+	font-size: 1.4375em; /* 23/16 */
+	padding: 10px 0 25px 0;
+	text-align: left;
+	top: 0;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+<pre>
+#content h2 img {
+	display: none;
+}
+#content h2 strong {
+	margin-top: 0;
+	width: 100%;
+}
+.user-text {
+	float: none;
+	padding: 0;
+	width: auto;
+	   -webkit-column-count: 1;
+	   -moz-column-count: 1;
+	   column-count: 1;
+}
+.user-text + img {
+	display: none;
+}
+</pre>
+</div>
+
+<style>
+	#com-3 {
+		background: transparent url('images/rwd-com-3.jpg') center 0 no-repeat;
+	}
+</style>
+<div id="com-3" class="slide">
+</div>
+
+
+
+<!-- <div class="slide">
+<pre>
+nav li {
+	font-size: 0.75em;
+	display: inline;
+	margin: 0 1%;
+}
+nav a {
+	color: #000;
+	font-size: 1.5em; /* 18/16 */
+	text-transform: uppercase;
+}
+#mobile-hamburger {
+	display: none;
+}
+</pre>
+</div> -->
+
+
+<div class="slide">
+	<h4>Styles for menu</h4>
+<pre>
+.menu-category .menu-section {
+	float: none;
+	text-align: left;
+	margin: 0;
+}
+.menu-category > div {
+	float: none;
+	width: auto;
+	padding: 0 20px;
+}
+.menu-category {
+	width: 100%;
+	text-align: left;
+	   -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   box-sizing: border-box;
+}
+
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+.menu-category h3 {
+	margin: 0 0 20px
+}
+.menu-category .menu-section ul {
+	height: auto;
+}
+.menu-category li {
+	text-align: left;
+}
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Footer</h4>
+<pre>
+footer {
+	line-height: 20px;
+}
+footer p {
+	padding-bottom: 20px;
+}
+footer nav ul {
+	display: block;
+}
+footer p, 
+footer ul {
+	float: none;
+}
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Footer</h4>
+<pre>
+footer li {
+	text-align: left;
+}
+footer li:first-child {
+	margin-left: 0;
+}
+footer li a {
+	font-size: 11px;
+}
+</pre>
+</div>
+
+
+
+<div class="slide">
+	<h4>Questions?</h4>
+	<p>We now have a fully responsive web site!</p>
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+<div class="slide black invert section">
+    <h1 class="v-center white">Google Maps</h1>
+</div>
+<div class="slide section">
+    <h4>The markup</h4>
+    <p>We are going to be integrating a full-width google map (with javascript!).  For now, let's just work on the style.</p>
+<pre>
+<section id="google-maps" class="clearfix">
+    <div class="wrapper">
+        <div id="address">
+            Address stuff goes here
+        </div>
+    </div>
+    <div id="map_canvas"></div>
+</section>
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#google-maps {
+    margin-top: 100px;
+    height: 450px;
+    position: relative;
+    width: 100%;
+}
+
+#map_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#address {
+    position: relative;
+    top: 60px;
+    z-index: 2;
+    background: #fff;
+    padding: 30px;
+    width: 340px;
+    height: 270px;
+    float: right;
+    margin-right: 85px;
+       -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+       box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+</pre>
+</div>
+
+
+<div class="slide">
+    <h4>The address area.</h4>
+<pre>
+<h3><span>Address</span></h3>
+<hr />
+<div>
+    <strong>500 East Cesar Chavez St, Austin, TX</strong><br />
+    Parking in Rear
+</div>
+<p><strong>Sunday - Thursday:</strong> 12:00 pm - 1:00 am</p>
+<p><strong>Friday & Saturday:</strong> 10:30 am - 2:00 am</p>
+<a href="#">Directions</a>
+<a href="#">(500) 867 5309</a>
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#address h3 {
+    background: url('sprites/header-address.gif') no-repeat top left;
+    height: 70px;
+    width: 342px;
+    margin: 0 auto 20px;
+}
+
+#address h3 span {
+    display: none;
+}
+
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#address div {
+    line-height: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+#address p strong {
+    display: inline-block;
+    width: 155px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#address a {
+    display: block;
+    float: left;
+    background: #bc0505;
+    width: 161px;
+    height: 41px;
+    bottom: 0;
+    margin: 33px 18px 0 0;
+    font-family: bevan, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 41px;
+}
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+#address hr {
+    margin: 10px auto;
+    width: 100px;
+    border: none;
+    border-top: 1px #eaeaea solid;
+}
+
+#address a:last-child {
+    margin-right: 0;
+}
+</pre>
+</div>
+
+
+        <div class="slide invert black section">
+    <h1 class="white">Javascript.</h1>
+</div>
+
+<div class="slide">
+    <h4>Including a javascript file.</h4>
+    <p>To get started with our website javascript, let's add the following just above the closing body tag:</p>
+    <pre>
+<script type="text/javascript" src="js/global.js"></script>
+
+    </pre>
+    <p>Now create a file in your holdens_web directory in a new folder called "js" called global.js</p>
+</div>
+
+<div class="slide">
+    <h4>Menu.</h4>
+    <p>Holden's has a menu that looks great on a normal computer screen, but takes up a lot of real estate on smaller devices.</p>
+    <p>To add some interactivity, we are going to target a user's <strong>click</strong> event to show and hide the menu.</p>
+    <p>First, let's find our mobile hamburger element:</p>
+    <pre>
+var mobiMenuBtn = document.getElementById('mobile-hamburger');
+    </pre>
+
+</div>
+
+<div class="slide">
+    <h4>Click Action.</h4>
+    <p>Now that we have the element, we can use the <strong>onclick</strong> event to:</p>
+    <ul>
+        <li>Determine if the nav is expanded by checking a class</li>
+        <li>If it's expanded, we remove the expanded class to close it</li>
+        <li>If it's not expanded, we add the expanded class to open it</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <pre>
+mobiMenuBtn.onclick = function( e ){
+    e.preventDefault();
+    //caching all classes attached to the element.
+    var allClasses = this.parentNode.className, 
+        testClass;
+    //test to see if the nav has already been expanded.
+    if( testClass = allClasses.match(/\sexpanded\s?/i) ){ 
+
+        //if nav is expanded, we take out the class 'expanded'
+        this.parentNode.className = allClasses.substring( 0, allClasses.indexOf(testClass[0]) );
+        return;
+
+    }
+    //if the nav is not expanded, we add class .expanded.
+    this.parentNode.className += ' expanded';
+}        
+    </pre>
+</div>
+
+<div class="slide">
+    <h4>Google Maps.</h4>
+    <p>Many more complicated functionality on modern websites take use of external libraries or APIs (application programming interface), such as the google maps API.<p>
+    <p>Using an API is similar to calling functions you yourself have created; based on the documentation, you can call the functions specified in order to get the desired functionality.</p>
+
+
+</div>
+<div class="slide">
+    <p>To begin, copy paste the javascript tag at this link right above the global.js include line in your index.html file:</p>
+    <p><a href="http://pastebin.com/vTAg4c10">http://pastebin.com/vTAg4c10</a></p>
+    
+</div>
+
+<div class="slide">
+    <p>First, set up a map with some default options required by the API.</p>
+    <pre>
+drawMap: function() {
+    var mapOptions = {
+        zoom: 15,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        mapMaker: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    //Create new google maps
+    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+  
+}
+    </pre>
+</div>
+
+<div class="slide">
+    <p><strong>new google.maps.Map()</strong> is calling a function from the API itself in order to create a map based on the <strong>div id</strong> and the <strong>options array</strong>.</p>
+    <p>These are the same as any other parameters you would pass into a function.</p>
+    <p>Hint: You could give a different div (as long as it is present in your markup!) or rename the options array, and it would work exactly the same.</p>
+</div>
+
+<div class="slide">
+    <h4>Drawing a marker.</h4>
+    <p>Google maps API also allows for drawing a marker, or little dot, based on an address.  In order to do this, we will:</p>
+    <ul>
+        <li>Geocode an address</li>
+        <li>Center the map based on the results of this geocode operation</li>
+        <li>Set a marker based on the result</li>
+    </ul>
+    
+    <p>All 3 of these actions come directly from google's API.</p>
+    <p>The following code will go after the <strong>var map = new google.map...</strong> line, but before the closing curly brace.</p>
+</div>
+
+<div class="slide">
+    <pre>    
+var geocoder = new google.maps.Geocoder();
+
+//Make a call to geocoder service to create a pin
+var latlng = geocoder.geocode({
+    address: '50 E Cesar Chavez St, Austin, TX'
+}, function (results, status) {
+
+    var myLatLng = results[0].geometry.location;
+
+    map.setCenter(myLatLng);
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title:"Hello World!"
+    });
+
+});    
+
+    </pre>
+</div>
+
+<div class="slide">
+    <h4>Putting it all together.</h4>
+    <pre>
+var HOLDENS = HOLDENS || {};
+HOLDENS.Global = {
+    init: function() {
+        HOLDENS.Global.setUpMobileMenu();    
+    },
+    setUpMobileMenu: function() {
+        
+    //... setUpMobileMenu function goes here!
+    }
+    
+};
+    </pre>
+</div>
+
+<div class="slide">
+<pre>
+HOLDENS.Map = {
+    init: function() {
+        HOLDENS.Map.drawMap();    
+    },
+    //default options required by the Google Maps APi
+    drawMap: function() {
+    // .. draw map function goes here!
+    }
+    
+    
+};
+</pre>
+</div>
+
+<div class="slide">
+<pre>
+window.onload = function() {
+    HOLDENS.Global.init();
+    HOLDENS.Map.init();
+}
+</pre>
+</div>
+
+        
+<div class="slide magenta invert white-border section">
+    <h1 class="v-center bigger white">Javascript.</h1>
+</div>
+
+<div class="slide">
+    <h4>Javascript.</h4>
+    <h5>Javascript is a robust programming language, interpreted by all modern browsers, that allows developers to create dynamic websites.</h5>
+    <p>Javascript...</p>
+    <ul class="build">
+        <li>Is Object-oriented</li>
+        <li>Allows access to the DOM</li>
+        <li>Creates dynamic websites!</li>
+    </ul>
+</div>
+
+<div class="slide section">
+    <h4>What is Object Oriented?</h4>
+    <p>Object oriented is a programming language design paradigm where everything can be encapsulated in "objects".</p>
+    <p>Instead of coding a set of instructions to happen in a row, object oriented programming allows you to model real-world objects and their various properties.</p>
+    <p><strong>Why is this useful?</strong> Objects are closely linked with their properties, so instead of copying a bunch of step by step actions, you can just recreate the object elsewhere.</p>
+</div>
+
+<div class="slide section">
+    <h4>What is the DOM? (briefly)</h4>
+    <h5>Document Object Model.</h5>
+    <p>An API for html or xml documents that allows developers to access parts of the page as "objects".</p>
+    <p>Using javascript, you can inspect or change the various "properties" of divs, forms, tags, etc.</p>
+<pre>
+document.getElementById('heading').innerHTML = 'New heading!';
+</pre>
+</div>
+
+<div class="slide section">
+    <h4>Inspecting.</h4>
+    <p>In addition to inspecting html elements and css properties, you can inspect javascript in the dev tools "console" tab.</p>
+    <p>If you click on the console tab, and type "document" and hit enter, you will see an "object" that represents the DOM of the current page.</p>
+    <p>To inspect more specific things from your own javascript files, you can use the function "console.log()" to print things out for yourself.</p>
+</div>
+
+        
+        <div class="slide black invert section">
+            <h1 class="v-center bigger white">Data Types.</h1>
+        </div>
+
+        <div class="slide">
+            <h4>Types.</h4>
+            <p>In javascript, various kinds of variables are known as "types".  These types indicate what kind of value a variable or property can hold.</p>
+            <p>A common type is "string", which is essentially any text that you'd be typing.</p>
+        </div>
+
+        <div class="slide">
+            <h4>Strings.</h4>
+            <p>"A sequence of characters".</p>
+            <p>Used all over!  Grabbing user input, adding new user input, etc.</p>
+            <p>Usually designated like so:</p>
+<pre>
+var string = 'this is a string!';
+var string2 = "this is also a string!";
+</pre>
+        </div>
+
+        <div class="slide">
+            <h4>Numbers.</h4>
+            <p>Numbers are numeric values.  Commonly used in conjunction with the arithmetic operators.</p>
+<pre>
+var number = 1;
+console.log(number++);
+console.log(4 + 2);
+</pre>
+        </div>
+
+        <div class="slide">
+            <h4>Arrays.</h4>
+            <p>Arrays are a group of strings, numbers, arrays, or objects.</p>
+<pre>
+var things = [];
+
+things.push('cars', 'planes', 'trains', 2);
+
+console.log(things);
+console.log(things.length);
+</pre>
+        </div>
+
+        <div class="slide">
+            <h4>Array properties.</h4>
+            <ul class="build">
+                <li>Integer-based keys.</li>
+                <li>Length.</li>
+            </ul>
+            <h4>Array methods.</h4>
+            <ul class="build">
+                <li>push.  Add to an array.</li>
+                <li>pop.  Remove the last element from array.</li>
+                <li>sort, reverse, splice...</li>
+                <li>forEach.  Call a function for each element.</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h4>Objects.</h4>
+            <p class="smaller">The data type only.</p>
+            <p>Objects are similar to arrays, but require "keys" for various elements.</p>
+            <p>Instead of "car, planes, trains", you would have something like "car: corvette", "plane: bomber", "train: amtrak".</p>
+<pre>
+var things = {
+    'car' : 'corvette',
+    'plane' : 'bomber',
+    'train' : 'amtrak'
+};
+
+console.log(things);
+console.log(things.car);
+</pre>
+        </div>
+        
+        <div class="slide black invert section">
+            <h1 class="v-center white">Doing stuff with data.</h1>
+        </div>
+
+        <div class="slide">
+            <h4>Operators.</h4>
+            <p>Similar to math operands, operators let you "assign" values, add, subtract, etc.</p>
+            <p>Many types of operators, including:</p>
+            <ul>
+                <li>Arithmetic (ie, +, -, %, ++, --)</li>
+                <li>Assignment (ie, =, *=, -=)</li>
+                <li>Comparison (ie, ==, !=, >)</li>
+                <li>Logical (&&, ||, !)</li>
+                <li>String (+ and +=)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h4>Important ones.</h4>
+            <h5>=</h5>
+            <p>Assignment operator.  Sets a variable to a value (including another variable, or function, etc.)</p>
+            <h5>++</h5>
+            <p>Essentially, take whatever value (numeric) and add one.  Useful for iterating.</p>
+            <h5>==</h5>
+            <p>Equality.  If two values, variables, or objects are equivalent.</p>
+        </div>
+
+        <div class="slide">
+            <h5>!</h5>
+            <p>Not.  For testing conditionals.</p>
+            <h5>&&</h5>
+            <p>"And".  For string two conditionals together.</p>
+            <p>ie, blah == true && blah !== false
+            <h5>||</h5>
+            <p>Or. For stringing two conditionals together, either of which can be true.</p>
+        </div>
+        
+        <div class="slide section">
+            <h4>Keywords.</h4>
+            <p>AKA: Reserved words.</p>
+            <p>Words that have a defined meaning, and cannot be changed by the programmer.</p>
+            <ul>
+                <li>Designates "special behavior"</li>
+                <li>All statements, control statements, etc. are "keywords" or "reserved words".</li>
+            </ul>
+        </div>
+
+        <div class="slide section">
+            <h4>Statements.</h4>
+            <h5>Keywords + Syntax == Statement.</h5>
+            <p class="smaller">Meaning, a mix of a key word, and the proper spacing, braces, expressions, semicolons, etc., to create a "statement" of <strong>what you want to do</strong> in your javascript.</p>
+            <p>Let's start with something basic.</p>
+<pre>
+var blah = 'foo';
+</pre>
+        </div>
+
+        <div class="slide">
+            <ul>
+                <li><strong>var</strong> indicates that we are declaring a variable.</li>
+                <li><strong>blah</strong> is the name of the variable.</li>
+                <li><strong>=</strong> indicates that we are setting the variable to its initial value (OPTIONAL)</li>
+                <li><strong>foo</strong> is the initial value.</li>
+            </ul>
+            <p>Thus, our "statement" means that we want to create a variable named blah, and set its value to the string 'foo'.</p>
+        </div>
+
+        <div class="slide">
+            <p>We can easily declare variables such as:</p>
+<pre>var blah;</pre>
+            <p>or a number</p>
+<pre>var blah = 3;</pre>
+            <p>or a string</p>
+<pre>var blah = 'foo';</pre>
+        </div>
+
+        <div class="slide">
+            <p>Open up a new html file and save it.</p>
+            <p>Type the following, save, and load in your browser:</p>
+<pre><script type="text/javascript">var blah;</script></pre>
+            <p>Now in your console, type "blah" and hit enter.</p>
+            <p>Now change set "blah" to 3 and inspect it in the console again.</p>
+            <p>Now, type in something else, such as "foo", and inspect again.</p>
+        </div>
+
+        <div class="slide">
+            <h4>Not declaring variables can lead to unexpected results (and thus errors in strict mode).  Declare your variables!</h4>
+            <p>This is the best way to ensure that your variables are doing what you want them to.</p>
+        </div>
+
+        <div class="slide section">
+            <h4>Functions.</h4>
+            <p>Another basic statement is the "function" statement, which declares a function.<p>
+            <p class="smaller">A function is a type of statement that does something.</p>
+<pre>
+function initialize(){
+    var blah = 5;
+    console.log(blah);
+}
+</pre>
+            <p class="smaller">(this one just prints out the value of "blah" in console)</p>
+            <p>To call it, add this:</p>
+<pre>initialize();</pre>
+        </div>
+
+        <div class="slide section">
+            <h4>Conditional Statements.</h4>
+            <p><strong>if</strong></p>
+            <p>If such and such is true, do something!</p>
+<pre>
+var blah = 5;
+if (blah == 5) {
+    console.log('true!');
+}
+</pre>
+        </div>
+
+        <div class="slide section">
+            <p><strong>if ... else</strong></p>
+            <p>Similar to an if statement, but also does something if the condition is false.</p>
+<pre>
+var blah = 5;
+if (blah == 5) {
+    console.log('true!');
+} else {
+    console.log('false =(');
+}
+</pre>
+            <p>You can also do an <strong>if else if</strong> with a separate condition.</p>
+        </div>
+
+        <div class="slide">
+<pre>
+var blah = 12;
+if (blah == 5) {
+    console.log('five!');
+} else if (blah == 6) {
+    console.log('six!');
+} else {
+    console.log('anything but five or six');
+}
+</pre>
+            <ul class="build">
+                <li>Useful for multiple conditions...</li>
+                <li>And when you want a default or fallback behavior.</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>Back to functions..</p>
+<pre class="structure">
+function initialize(){
+    var blah = 5;
+    for (var i = 0; i <= blah; i++) {
+        console.log(i);
+    }
+}
+</pre>
+            <p>...which introduces control structures.</p>
+            <p>Essentially: "for each value of i starting at 0 and ending where i is less than or equal to the value of variable blah"</p>
+            <p>If you run this function, it should print in the console, 0, 1, 2, 3, 4, 5.</p>
+        </div>
+
+        <div class="slide section">
+            <h4>Passing in values.</h4>
+            <p>All functions can optionally accept values.  These values can be used inside of the scope of the function.</p>
+<pre class="structure">
+function initialize(blah){
+    for (var i = 0; i <= blah; i++) {
+        console.log(i);
+    }
+}
+
+initialize(6);
+</pre>
+            <p>This function accepts a number, and then enters a loop, until the value of the number passed in is met.  Try it again with another number and see the output!</p>
+        </div>
+
+        <div class="slide section">
+            <h4>Loop Statements.</h4>
+            <p>A type of statement, which starts a "loop".  Basically, something that evaluates over and over until whatever conditions you give it return false.</p>
+            <p>In our previous example, we are printing out the value of "i" until i <= blah returns false. </p>
+            <p><strong>This means the loop stops when the value of i becomes equal to the value of blah.</strong></p>
+            <p>Useful when consuming data until the data is gone, or until an outside condition is met.</p>
+        </div>
+
+        <div class="slide">
+            <h4>Loop Statements, continued.</h4>
+            <p><strong>do ... while</strong></p>
+            <p>Let's rewrite our previous function using this type of loop statement.</p>
+<pre class="structure">
+var blah = 5;
+var i = 0;
+do {
+    console.log(i);
+    i++;
+}
+while (i <= blah);
+</pre>
+        </div>
+
+        <div class="slide">
+            <h4>Loop Statements, last one promise!</h4>
+<pre class="structure">
+var blah = 5;
+var i = 0;
+while (i <= blah) {
+    console.log(i);
+    i++;
+}
+</pre>
+        </div>
+
+        <div class="slide">
+            <h4>So what's the difference?</h4>
+            <p class="smaller">hint .. check out the order we are writing things in!</p>
+            <p><strong>do ... while</strong> always executes once (because the condition is after the body).</p>
+            <p><strong>while</strong>, the conditions are first, so it may never execute.</p>
+            <p><strong>for</strong> loop, indicates that we are doing something "generative" in our conditions (in this case, adding one each time)</p>
+        </div>
+
+
+        <div class="slide invert black section">
+    <h1 class="white">Literal Syntax.</h1>
+</div>
+
+<div class="slide">
+    <h4>Literal Syntax</h4>
+    <p>An object literal is a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}).</p>
+    <pre>
+var object = {
+    foo: 1,
+    "bar": "some string"
+};
+</pre>
+    <p>Properties can be accessed using dot and bracket notation.</p>
+    <pre>
+object.foo = object.foo + 1; //dot notation
+object["foo"] = object["foo"] + 1; //bracket notation
+    </pre>
+</div>
+
+<div class="slide">
+    <p>When a function is used as an object property, it is called a method. Like properties, methods can also be specified in object literal notation.</p>
+    <pre>
+var object = {
+    sum: function(foo, bar) {
+        return foo + bar;
+    }
+};
+    </pre>
+    <p>Methods can also be invoked using dot and bracket notation.</p>
+    <pre>
+object.sum(1, 2);
+object["sum"](1, 2);
+    </pre>
+
+</div>
+<div class="slide">
+    <p>A full Object Literal Syntax example.</p>
+            <pre class="full">
+var DEMO = DEMO || {};
+DEMO.global = {
+    init: function(){
+        DEMO.global.print();
+    },
+    print: function() {
+        var print = document.getElementById('print_button');
+
+            print.onclick = function () {
+            window.print();
+            };
+    }
+};
+// using window ready is better than DOM ready
+window.onload = function () {
+    DEMO.global.init();
+};
+            </pre>
+
+</div>
+<div class="slide">
+    <p>Literal vs. Classic</p>
+            <pre class="full">
+var candies = new Array();
+candies.push('Snickers', 'Butterfinger', 'Twix');
+var goodies = ['Munchos', 'Funyons', 'Cheetos']; //literal
+console.log(candies);
+console.log(goodies);
+var kitten = new Object();
+kitten.meow = function() { alert('meow'); };
+kitten.monthsOld = 4;
+var puppy = {
+        bark: function() {
+                alert('yap');
+        },
+        monthsOld: 6
+}
+kitten.meow();
+puppy.bark();
+console.log(kitten);
+console.log(puppy);
+            </pre>
+
+</div>
+
+                <div class="slide invert black section">
+            <h1 class="white">Events.</h1>
+        </div>
+        <div class="slide">
+            <h4>Events.</h4>
+
+            Javascript can listen for user interactions. These interactions are called "events".
+
+            <div style="width: 100px; height: 85px; padding-top: 15px; border: 1px black solid; margin: 0 auto; text-align: center; cursor: pointer;" id="click_me">Click me!</div>
+
+            <pre>
+var element = document.getElementById('click_me');
+
+element.onclick = function () {
+    alert('Hello, World!');
+};
+            </pre>
+        </div>
+
+
+        <script type="text/javascript">
+
+            var element = document.getElementById('click_me');
+
+            element.onclick = function () {
+                alert('Hello, World!');
+            };
+
+        </script>
+        
+                <div class="slide">
+            <h4>Events.</h4>
+            
+            Most Common events
+        
+            <ul class="build">
+                <li><label>Load</label></li>
+                <li><label>Click</label><button id="events_button">Click me!</button></li>
+                <li><label>Mouseover</label><button id="events_mouseover" style="padding: 10px;">Mouse is out!</button></li>
+                <li><label>Change</label><select id="events_change"><option value="ribs">Ribs</option><option value="brisket">Brikset</option><option value="mac_n_cheese">Mac & Cheese</option></select></li>
+                <li>And lots more!</li>
+            </ul>        
+            
+            <script type="text/javascript">
+            
+                var events_button = document.getElementById('events_button');
+                
+                events_button.onclick = function () { 
+                    alert('Hello, World!');
+                };
+                
+                var events_mouseover = document.getElementById('events_mouseover');
+                
+                events_mouseover.onmouseover = function () { 
+                    events_mouseover.innerHTML = 'Mouse is In!'
+                };
+                events_mouseover.onmouseout = function () { 
+                    events_mouseover.innerHTML = 'Mouse is Out!'
+                };
+
+                var events_change = document.getElementById('events_change');
+                
+                events_change.onchange = function (val) { 
+                    alert(events_change.options[events_change.selectedIndex].value);
+                };
+            
+            </script>
+            
+        </div>        
+
+
+
+                
+        <div class="slide black invert white-border">
+        <h1 class="v-center bigger white">Questions?</h1>
+        </div>
+        
+        <div class="slide">
+        <h1 class="v-center bigger magenta">Done.</h1>
+        </div>
+        
+    </div> <!-- /slides -->
+</body>
+</html>
+
+
